@@ -20,16 +20,19 @@ e.g.
 <ul>
 <li>styling is weird</li>
 <li>Your page doesn't have your styling</li>
+<li>I wanted to update scripts for the whole website, not just my page</li>
 <li>No scripts (nothing happens when you click buttons or do other things)</li>
 <li>When you click a link it says Page not found</li>
 <li>Images not loading</li>
 
+
 ## If you have a problem that's not above or can't understand instructions, please contact me and I will help
 6. Check that everything's working. Load the website in your browser. If there's anything funny going on with the CSS, go into your newly added mypage.css, and see if there's anything that selects general parts of a website, like body{} or h1{} or div{} or p{}, and change it to an ID or class selector that's unique to your page, like #myContainer{} or .mathsdiv{}, etc.
 
-If the CSS for your page is not showing, check that you linked correctly to /styles/mypage.css (with the /) <b>This link should be inside the head tag of _includes/base or chinese.njk</b> <p style="color:red;">(step 4)</p>
+If the CSS for your page is not showing, check that you linked correctly to /styles/mypage.css (with the /) <b>This link should be inside the head tag of _includes/base or chinese.njk</b>. You should also check that your CSS file actually has stuff that will affect your page. If you changed "body" to #myContainer in the CSS file, but didn't update the HTML, you need to also update the HTML to add a &lt;div id="myContainer"&gt;&lt;/div&gt; (step 4)
 
-If nothing happens when you click a button, which is a problem with the script, check that you've linked the bottom of your page to a script that you created (or 1stgrade.js for maths) and that you've added your scripts to that script file (like adding dice roll to 1stgrade.js)<p style="color:red;">(step 5.)</p>
+If nothing happens when you click a button, which is a problem with the script, check that you've linked the bottom of your page to a script that you created (or 1stgrade.js for maths) and that you've added your scripts to that script file (like adding dice roll to 1stgrade.js)(step 5.)
+If you want your script to control the whole website, like main.js, simply add &lt;script src="/scripts/your_script.js"&gt;&lt;/script&gt; to the bottom of the body tag in _includes/base or chinese.njk
 
 If there's an error saying page not found or we can't get that page, or something where the page doesn't load when you click on a link, it's almost certainly because of your path. Go into the link that you click to get to the page, and see if it has a / in front of the path. If it doesn't, add a /.
 
