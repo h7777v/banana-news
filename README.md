@@ -27,7 +27,7 @@ e.g.
 
 
 ## If you have a problem that's not above or can't understand instructions, please contact me and I will help
-6. Check that everything's working. Load the website in your browser. If there's anything funny going on with the CSS, go into your newly added mypage.css, and see if there's anything that selects general parts of a website, like body{} or h1{} or div{} or p{}, and change it to an ID or class selector that's unique to your page, like #myContainer{} or .mathsdiv{}, etc.
+Check that everything's working. Load the website in your browser. If there's anything funny going on with the CSS, go into your newly added mypage.css, and see if there's anything that selects general parts of a website, like body{} or h1{} or div{} or p{}, and change it to an ID or class selector that's unique to your page, like #myContainer{} or .mathsdiv{}, etc.
 
 If the CSS for your page is not showing, check that you linked correctly to /styles/mypage.css (with the /) <b>This link should be inside the head tag of _includes/base or chinese.njk</b>. You should also check that your CSS file actually has stuff that will affect your page. If you changed "body" to #myContainer in the CSS file, but didn't update the HTML, you need to also update the HTML to add a &lt;div id="myContainer"&gt;&lt;/div&gt; (step 4)
 
