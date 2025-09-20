@@ -14,7 +14,7 @@ e.g.
 </code>
 
 3. Create your new page as a HTML page in the root folder (The top level of the Github repository)
-4. <mark>If the file includes CSS, create a new CSS file in styles and name it "[your page name here].css". Then, add <code>&lt;link rel="stylesheet" href="/styles/yourpage.css"&gt;</code> in the head tag of _includes/base.njk</mark>
+4. <mark>If the file includes CSS, create a new CSS file in styles and name it "[your page name here].css". Then, add <code>&lt;link rel="stylesheet" href="/styles/yourpage.css"&gt;</code> in the head tag of _includes/base.njk or (_includes/chinese.njk)</mark>
 5. If your page includes JS (<mark>To the other collaborator on this website: it's probably a maths page, so if all the JS you need is just reveal answer, simply add <code>&lt;script src="/scripts/1stgrade.js"&gt;&lt;/script&gt;</code> to the bottom of your body tag, like how we usually include scripts. If there's other JS functionality which is not already included in 1stgrade.js, like lets say flip a coin or something, add that JS to 1stgrade.js</mark>) If it's not a math page, simply make a new JS file in scripts, e.g. /scripts/file.js and add &lt;script src="/scripts/file.js"&gt;&lt;/script&gt; to the bottom of your page's body tag.
 ## Step 6: CHECK THAT EVERYTHING'S WORKING. If there's one of these problems, this readme will definitely have the fix:
 <ul>
