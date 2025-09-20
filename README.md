@@ -27,7 +27,7 @@ e.g.
 ## If you have a problem that's not above or can't understand instructions, please contact me and I will help
 6. Check that everything's working. Load the website in your browser. If there's anything funny going on with the CSS, go into your newly added mypage.css, and see if there's anything that selects general parts of a website, like body{} or h1{} or div{} or p{}, and change it to an ID or class selector that's unique to your page, like #myContainer{} or .mathsdiv{}, etc.
 
-If the CSS for your page is not showing, check that you linked correctly to /styles/mypage.css (with the /) <b>inside _includes/base or chinese.njk</b> <p style="color:red;">(step 4)</p>
+If the CSS for your page is not showing, check that you linked correctly to /styles/mypage.css (with the /) <b>This link should be inside the head tag of _includes/base or chinese.njk</b> <p style="color:red;">(step 4)</p>
 
 If nothing happens when you click a button, which is a problem with the script, check that you've linked the bottom of your page to a script that you created (or 1stgrade.js for maths) and that you've added your scripts to that script file (like adding dice roll to 1stgrade.js)<p style="color:red;">(step 5.)</p>
 
