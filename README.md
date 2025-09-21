@@ -1,3 +1,6 @@
+# Banana News
+News, tech, politics, games, geography, maths and science site
+# 1500 commits on main repository, almost 100 commits on new repository! 💯 🎉🥳
 # Big updation feature with eleventy and nunjucks
 How to add a page:
 1. Go into _includes/base.njk (or _includes/chinese.njk if you are making a chinese page) and add a page inside the top nav bar in that file. If you don't want it in the topnav bar, add it to the div options in your desired page (e.g. Index, Maths, Fun...)
