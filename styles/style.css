@@ -33,6 +33,18 @@ https://banana-news.github.io/banana/share_this_page
 
 
 */
+select:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+select {
+  width: 200px;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: white;
+  border: none;
+}
 .background {
   position: relative;
   background-size: cover;
