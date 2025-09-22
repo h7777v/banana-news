@@ -36,7 +36,7 @@ News, tech, politics, games, geography, maths and science site
 **Fixes and tips:**
 - Check your CSS file is linked correctly (`/styles/mypage.css` in the head). If styling is weird, make sure that your CSS targets elements unique to your page (e.g. IDs or Classes like `# and .`, not general elements like `body`
 - For scripts, link your file at the bottom of your page or in the template. You'll need to create a new script file with your JS in `/scripts`. If it is a Maths page, simply link to 1stgrade.js. Currently (as of 1-2, 3-4, 5-6 and 7-9 pages, there is only reveal answer and dice roll code. If you need anything else, just add it to the file!
-- For links, use `/page` instead of `page.html` or `/page.html`.
+- For links, use `/page` instead of `page.html`, `/page.html` or `page`.
 - For images, use `/images/image.png` and check your path and file extension.
 
 If you need help or instructions aren’t clear, contact the maintainer.
