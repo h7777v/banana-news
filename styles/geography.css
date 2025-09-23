@@ -85,7 +85,7 @@ https://banana-news.github.io/banana/share_this_page
             filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
         }
 
-        h1 {
+        #geographyH1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
             color: #fff;
