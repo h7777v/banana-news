@@ -1,39 +1,50 @@
 <h1>Banana News</h1>
 <p>News, tech, politics, games, geography, maths and science site</p>
 <h1>1500 commits on main repository, 100 commits on new repository! 💯 🎉🥳</h1>
-<h1>Big updation feature with eleventy and nunjucks</h1>
-<p>How to add a page:</p>
+<h1>The all-new Banana News with eleventy SSG and nunjucks!</h1>
+<h1>Banana News</h1>
+<p>News, tech, politics, games, geography, maths and science site</p>
+<details>
+<summary><h2>How to write a news article</h2></summary>
 <ol>
-<li>Go into _includes/base.njk (or _includes/chinese.njk if you are making a chinese page) and add a page inside the top nav bar in that file. If you don't want it in the topnav bar, add it to the div options in your desired page (e.g. Index, Maths, Fun...)</li>
-<li>Add your page's body content to the code like this:
-<code></li>
+<li>Create a markdown file. It's actually very easy, just search up markdown. You can also look inside the code of this README. Some basics: heading = # heading, h2 = ## heading, etc. Normal text = normal text, bold or italic: **bold** and italics with underscore (_) around it</li>
+<li>Send the markdown code to the owners</li>
 </ol>
-<hr>
-<h2>layout: &quot;base.njk&quot;
-title: &quot;Home&quot; (this is a comment: Notice that there is no - Banana News, that will be automatically handled)</h2>
-<p>Your page's body content goes here, without anything like topnavs, head tags, footers or stylesheets.
-e.g.
+</details>
+<h2>How to add a page</h2>
+<ol>
+<li>Add your page to the top nav bar in <code>_includes/base.njk</code> (or <code>_includes/chinese.njk</code> for Chinese pages). If you don’t want it in the top nav bar, add it to the dropdown.</li>
+<li>Add your page’s body content like this:<pre><code>---
+layout: &quot;base.njk&quot;
+title: &quot;Home&quot; # The site will handle adding &quot; - Banana News&quot;
+---
+Your page's body content goes here, without topnavs, head tags, footers or stylesheets.
+Example:
 &lt;h1&gt;THIS IS MY AMAZING PAGE&lt;/h1&gt;
 &lt;p&gt;A little bit of page content&lt;/p&gt;
-</code></p>
-<ol start="3">
-<li>Create your new page as a HTML page in the root folder (The top level of the Github repository)</li>
-<li><mark>If the file includes CSS, create a new CSS file in styles and name it &quot;[your page name here].css&quot;. Then, add <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/yourpage.css&quot;&gt;</code> in the head tag of _includes/base.njk or (_includes/chinese.njk)</mark></li>
-<li>If your page includes JS (<mark>To the other collaborator on this website: it's probably a maths page, so if all the JS you need is just reveal answer, simply add <code>&lt;script src=&quot;/scripts/1stgrade.js&quot;&gt;&lt;/script&gt;</code> to the bottom of your body tag, like how we usually include scripts. If there's other JS functionality which is not already included in 1stgrade.js, like lets say flip a coin or something, add that JS to 1stgrade.js</mark>) If it's not a math page, simply make a new JS file in scripts, e.g. /scripts/file.js and add &lt;script src=&quot;/scripts/file.js&quot;&gt;&lt;/script&gt; to the bottom of your page's body tag.</li>
+</code></pre>
+</li>
+<li>Create your new page as an HTML file in the root folder (top level of the repository).</li>
+<li>If your page includes CSS, create a new CSS file in <code>styles</code> named <code>[your page name].css</code>. Add <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/yourpage.css&quot;&gt;</code> in the head tag of your page’s template.</li>
+<li>If your page includes JS, create a new JS file in <code>scripts</code> and link it at the bottom of your page. For maths pages, you can use <code>1stgrade.js</code> if all you need is &quot;reveal answer&quot;.</li>
 </ol>
-<h2>Step 6: CHECK THAT EVERYTHING'S WORKING. If there's one of these problems, this readme will definitely have the fix:</h2>
+<h2>Troubleshooting</h2>
 <ul>
-<li>styling is weird</li>
-<li>Your page doesn't have your styling</li>
-<li>I wanted to update scripts for the whole website, not just my page</li>
-<li>No scripts (nothing happens when you click buttons or do other things)</li>
-<li>When you click a link it says Page not found</li>
-<li>Images not loading</li>
-<h2>If you have a problem that's not above or can't understand instructions, please contact me and I will help</h2>
-<p>Check that everything's working. Load the website in your browser. If there's anything funny going on with the CSS, go into your newly added mypage.css, and see if there's anything that selects general parts of a website, like body{} or h1{} or div{} or p{}, and change it to an ID or class selector that's unique to your page, like #myContainer{} or .mathsdiv{}, etc.</p>
-<p>If the CSS for your page is not showing, check that you linked correctly to /styles/mypage.css (with the /) <b>This link should be inside the head tag of _includes/base or chinese.njk</b>. You should also check that your CSS file actually has stuff that will affect your page. If you changed &quot;body&quot; to #myContainer in the CSS file, but didn't update the HTML, you need to also update the HTML to add a &lt;div id=&quot;myContainer&quot;&gt;&lt;/div&gt; (step 4)</p>
-<p>If nothing happens when you click a button, which is a problem with the script, check that you've linked the bottom of your page to a script that you created (or 1stgrade.js for maths) and that you've added your scripts to that script file (like adding dice roll to 1stgrade.js)(step 5.)
-If you want your script to control the whole website, like main.js, simply add &lt;script src=&quot;/scripts/your_script.js&quot;&gt;&lt;/script&gt; to the bottom of the body tag in _includes/base or chinese.njk</p>
-<p>If there's an error saying page not found or we can't get that page, or something where the page doesn't load when you click on a link, it's almost certainly because of your path. Go into the link that you click to get to the page, and see if it has a / in front of the path. If it doesn't, add a /.</p>
-<p>All links to other pages should not be page or page.html or /page.html, but they should be /page, because the program has automatically generated pages that don't have the  which look simpler and more clean.</p>
-<p>If your image is not loading, it's almost certainly for the same reason, so go into it and check that you have /images/image.png/JPG/jpeg.... If it's still not working, check inside your images folder to see if you have the image. If that's not working, and you're using an absolute URL, like https://science.com/chemistry.png, check if that image still exists. This has happened before with a 5c coin image for the fun page.</p>
+<li>Styling is weird or missing.</li>
+<li>Page doesn’t have your styling.</li>
+<li>Need to update scripts for the whole website, not just your page.</li>
+<li>No scripts or buttons don’t work.</li>
+<li>Page not found when clicking a link.</li>
+<li>Images not loading.</li>
+</ul>
+<p><strong>Fixes and tips:</strong></p>
+<ul>
+<li>Check your CSS file is linked correctly (<code>/styles/mypage.css</code> in the head). If styling is weird, make sure that your CSS targets elements unique to your page (e.g. IDs or Classes like <code># and .</code>, not general elements like <code>body</code>)</li>
+<li>For scripts, link your file at the bottom of your page or in the template. You'll need to create a new script file with your JS in <code>/scripts</code>. If it is a Maths page, simply link to 1stgrade.js. Currently (as of 1-2, 3-4, 5-6 and 7-9 pages), there is only reveal answer and dice roll code. If you need anything else, just add it to the file!</li>
+<li>For links, use <code>/page</code> instead of <code>page.html</code>, <code>/page.html</code> or <code>page</code>.</li>
+<li>For images, use <code>/images/image.png</code> and check your path and file extension.</li>
+<li>Make sure you do not have infinitely running loops as it will crash the client's tab/browser (e.g. <code>while(true){}</code>).</li>
+</ul>
+<p>If you need help or instructions aren’t clear, contact the maintainer.</p>
+<hr>
+<p>Check that everything’s working by loading the website in your browser!</p>
