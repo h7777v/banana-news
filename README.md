@@ -5,6 +5,12 @@ News, tech, politics, games, geography, maths and science site
 # Banana News
 
 News, tech, politics, games, geography, maths and science site
+<details>
+<summary><h2>How to write a news article</h2></summary>
+
+1. Create a markdown file. It's actually very easy, just search up markdown. You can also look inside the code of this README. Some basics: heading = # heading, h2 = ## heading, etc. Normal text = normal text, bold or italic: &ast;&ast;bold&ast;&ast; and italics with underscore (_) around it
+2. Send the markdown code to the owners
+</details>
 
 ## How to add a page
 
