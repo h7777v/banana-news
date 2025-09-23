@@ -1,10 +1,6 @@
 # Banana News
-
-News, tech, politics, games, geography, maths and science site
 ## 1500 commits on main repository, 100 commits on new repository! 💯 🎉🥳
 ## The all-new Banana News with eleventy SSG and nunjucks!
-## Banana News
-
 News, tech, politics, games, geography, maths and science site
 <img src="/images/logosvg.svg" height="200px" alt="Our logo">
 <details>
