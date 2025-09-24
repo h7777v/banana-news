@@ -37,7 +37,24 @@ function backspace() {
       if (form1.answer.value.trim().toLowerCase().includes('the answer to life the universe and everything')){
         form1.answer.value =42;
         //hee hee
-      } else {
+      }
+      //Haoyang if you have the JavaScript code for the thing, please help!
+      //This dumb JS code is unfinished
+
+/*
+      else if(form1.answer.value.includes("Banana Encryption Systems")) {
+        form1.answer.value.replace("Banana Encryption Systems", "");
+        const string = form1.answer.value;
+        const stringArray = string.split('');
+        const letterArray = ['q','a','z','w','s','x','e','d','c','r','f','v','t','g','b','y','h','n','u','j','m','i','k','o','l','p','Q','A','W','S', 'E','D','R','F','T','G','Y','H','U','J','I','K','O','L','Z','C','X','V','B','M','N','P','1','2','3','4','5','6','7','8','9','0',' ',',','.','/',';',"'",'[',']','\\','`','~','<','>','?',':','"','{','}','|','-','=','_','+','!','@','#','$','%','^','&','*','(',')','÷','…','¯','ツ'];
+        let notUnSupported = true
+        let indexes = []
+        for (i in stringArray){
+          if (stringArray[i] in letterArray) {
+            indexes.append()
+          }
+        }
+      }*/else {
         try{
         form1.answer.value = eval(form1.answer.value);
         }
