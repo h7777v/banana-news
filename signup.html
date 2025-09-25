@@ -15,7 +15,7 @@ title: "Sign Up"
   </div>
   <button type="submit">Create Account</button>
 </form>
-<button type="google">Signup with Google</button>
+<button id="google" type="button">Signup with Google</button>
 <div id="message"></div>
 
 <p>Already have an account? <a href="/login/">Log In</a></p>
@@ -24,7 +24,10 @@ title: "Sign Up"
   // Import the required Firebase functions
   import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
+const provider = new GoogleAuthProvider();
+import { signInWithPopup } from "firebase/auth";
   // Your Firebase configuration (you've already added this to your layout file)
   const firebaseConfig = {
 
@@ -69,10 +72,7 @@ title: "Sign Up"
         console.error("Signup failed:", errorMessage);
       });
   });
-  import { getAuth, GoogleAuthProvider } from "firebase/auth";
-
-const provider = new GoogleAuthProvider();
-import { signInWithPopup } from "firebase/auth";
+  
   document.addEventListener("google", (e) => {
     signInWithPopup(auth, provider)
   .then((result) => {
