@@ -221,9 +221,6 @@ text-align:center;
 #searchButton{
   float:right;
 }
-.rightNerds {
-  float:right;
-}
 .topnav a:hover {
   color:#8f8e8e;
   transition: 0.15s ease-in-out;
