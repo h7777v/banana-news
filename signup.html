@@ -21,12 +21,17 @@ title: "Sign Up"
 <p>Already have an account? <a href="/login/">Log In</a></p>
 
 <script type="module">
-  // Import the required Firebase functions
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-import { GoogleAuthProvider } from "firebase/auth";
+  // All imports now use the bare specifier "firebase/..."
+  import { initializeApp } from "firebase/app"; 
+  import { 
+    getAuth, 
+    createUserWithEmailAndPassword, 
+    GoogleAuthProvider, 
+    signInWithPopup 
+  } from "firebase/auth";
 
-const provider = new GoogleAuthProvider();
+  const provider = new GoogleAuthProvider();
+  // ... rest of your code
 import { signInWithPopup } from "firebase/auth";
   // Your Firebase configuration (you've already added this to your layout file)
   const firebaseConfig = {

@@ -89,8 +89,14 @@
 
         <link rel="shortcut icon" href="/images/logosvg.svg"><link rel="icon" href="/images/logosvg.svg">
         <title>{{ title }} - Banana News</title>
-        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+        <script type="importmap">
+  {
+    "imports": {
+      "firebase/app": "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js",
+      "firebase/auth": "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"
+    }
+  }
+</script>
 <!--draw logos from memory-->
 <style>canvas{background-color:#ffff;}</style>
 <!--elon money:-->
