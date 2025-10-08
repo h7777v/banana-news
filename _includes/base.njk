@@ -212,6 +212,22 @@
   import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
 
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+
+const provider = new GoogleAuthProvider();
+import { signInWithPopup } from "firebase/auth";
+  // Your Firebase configuration (you've already added this to your layout file)
+  const firebaseConfig = {
+
+  apiKey: "AIzaSyDPTxdGNRcokbHS9fNVxq2VgO_TJcuDP08",
+  authDomain: "banana-news-62293.firebaseapp.com",
+  projectId: "banana-news-62293",
+  storageBucket: "banana-news-62293.firebasestorage.app",
+  messagingSenderId: "439905617568",
+  appId: "1:439905617568:web:632fb5bfe4984658bf6bc5",
+  measurementId: "G-K80PE3QMXW"
+
+};
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
