@@ -20,26 +20,27 @@ title: "Sign Up"
 
 <p>Already have an account? <a href="/login/">Log In</a></p>
 
-<script type="module">
-  // Import the required Firebase functions
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+  <script type="module">
+  // FIX: Combine all Auth functions/classes into one import statement.
+  // This imports all needed functions/classes from the full CDN path.
+  import { 
+    getAuth, 
+    createUserWithEmailAndPassword, 
+    GoogleAuthProvider, 
+    signInWithPopup 
+  } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+  
+  // FIX: This is already correct.
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-const provider = new GoogleAuthProvider();
-import { signInWithPopup } from "firebase/auth";
-  // Your Firebase configuration (you've already added this to your layout file)
+  // The rest of your code is now correct for the Modular API
+  const provider = new GoogleAuthProvider(); 
+
+  // Your Firebase configuration...
   const firebaseConfig = {
-
-  apiKey: "AIzaSyDPTxdGNRcokbHS9fNVxq2VgO_TJcuDP08",
-  authDomain: "banana-news-62293.firebaseapp.com",
-  projectId: "banana-news-62293",
-  storageBucket: "banana-news-62293.firebasestorage.app",
-  messagingSenderId: "439905617568",
-  appId: "1:439905617568:web:632fb5bfe4984658bf6bc5",
-  measurementId: "G-K80PE3QMXW"
-
-};
+    apiKey: "AIzaSyDPTxdGNRcokbHS9fNVxq2VgO_TJcuDP08",
+    // ... (rest of your config)
+  };
 
   // Initialize Firebase and get the Auth service
   const app = initializeApp(firebaseConfig);
