@@ -221,8 +221,8 @@ text-align:center;
 #searchButton{
   float:right;
 }
-.rightNerds {
-  float:right;
+.rightNerd{
+  margin-right:27.33!important;
 }
 .topnav a:hover {
   color:#8f8e8e;

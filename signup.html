@@ -20,23 +20,18 @@ title: "Sign Up"
 
 <p>Already have an account? <a href="/login/">Log In</a></p>
 
-  <script type="module">
-  // FIX: Combine all Auth functions/classes into one import statement.
-  // This imports all needed functions/classes from the full CDN path.
+<script type="module">
+  // All imports now use the bare specifier "firebase/..."
+  import { initializeApp } from "firebase/app"; 
   import { 
     getAuth, 
     createUserWithEmailAndPassword, 
     GoogleAuthProvider, 
     signInWithPopup 
-  } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
-  
-  // FIX: This is already correct.
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  } from "firebase/auth";
 
-  // The rest of your code is now correct for the Modular API
-  const provider = new GoogleAuthProvider(); 
-
-  // Your Firebase configuration...
+  const provider = new GoogleAuthProvider();
+  // Your Firebase configuration (you've already added this to your layout file)
   const firebaseConfig = {
     apiKey: "AIzaSyDPTxdGNRcokbHS9fNVxq2VgO_TJcuDP08",
     // ... (rest of your config)
