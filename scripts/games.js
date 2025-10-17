@@ -32,15 +32,11 @@ https://banana-news.github.io/banana/share_this_page
 var jsonFile
 var layout
 
-(async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>jsonFile=data).catch(error => console.error('Unable to fetch data (games.json):', error));})();
+(async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>jsonFile=data;for(i in jsonFile){layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}')"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`}).catch(error => console.error('Unable to fetch data (games.json):', error));})();
 
 console.log(jsonFile);
 
 layout=""
-
-for(i in jsonFile){
-  layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}')"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`
-}
 
 /*
 const imagecombinerdiv = document.getElementById('imagecombiner');
