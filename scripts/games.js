@@ -36,6 +36,8 @@ const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){layout+=`<div class="
 
 (async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>loadLayout(data)).catch(error => console.error('Unable to fetch data (games.json):', error));})();
 
+document.getElementById("options").innerHTML=layout;
+
 /*
 const imagecombinerdiv = document.getElementById('imagecombiner');
 const elondiv = document.getElementById('elonmoney');
