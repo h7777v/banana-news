@@ -32,7 +32,7 @@ https://banana-news.github.io/banana/share_this_page
 var jsonFile
 var layout=""
 
-(()=>{fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>jsonFile=data).catch(error => console.error('Unable to fetch data (games.json):', error));})();
+(async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>jsonFile=data).catch(error => console.error('Unable to fetch data (games.json):', error));})();
 
 for(i in jsonFile){
   layout+=`<div class="options-div" title="${i["title"]}" style="background-image:url('${i["img"]}')"><h2>${i["header"]}</h2><p>${i["text"]}</p></div>`
