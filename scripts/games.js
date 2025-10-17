@@ -30,7 +30,7 @@ If you're the sort of person who looks at the source code of webpages, try our c
 https://banana-news.github.io/banana/share_this_page
 */
 var jsonFile
-var layout=""
+var layout
 
 (async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>jsonFile=data).catch(error => console.error('Unable to fetch data (games.json):', error));})();
 
