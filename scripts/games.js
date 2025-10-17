@@ -36,7 +36,7 @@ var layout
 
 layout=""
 
-for(i in jsonFile){
+for(i of jsonFile){
   layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}')"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`
 }
 
