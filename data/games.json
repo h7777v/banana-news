@@ -1,8 +1,8 @@
 {
   "Ocean":{
     "header" : "Ocean", 
-    "text" : "Navigate through rocks, coral, fish and jellies, each with a different chance of killing you!"
-    "img" : "background-image:url('/images/ocean.png')"
-    "title" : "https://albertkemp.github.io/scorespace_game"
+    "text" : "Navigate through rocks, coral, fish and jellies, each with a different chance of killing you!",
+    "img" : "background-image:url('/images/ocean.png')",
+    "title" : "https://albertkemp.github.io/scorespace_game",
   }
 }
