@@ -38,9 +38,9 @@ https://banana-news.github.io/banana/share_this_page
     for (i = 0;i<scienceDivs.length;i++) {
         random = getRandom(1);
         if (random == 1) {
-            scienceDivs[i].innerHTML += "<div style='margin:auto;'><img src='/images/fish.png' height='100' width='100'><p>Good job! On to the next topic!</p></div>";
+            scienceDivs[i].innerHTML += "<p>🔥Good job! On to the next topic!🔥</p>";
         } else {
-            scienceDivs[i].innerHTML += "<div style='margin:auto;'><img src='/images/jelly.png' height='100' width='100'><p>Good job! On to the next topic!</p></div>";
+            scienceDivs[i].innerHTML += "<p>🔥Good job! On to the next topic!🔥</p>";
         }
     }
     for (i = 0;i<keyTerms.length;i++) {
