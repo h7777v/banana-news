@@ -46,3 +46,6 @@ https://banana-news.github.io/banana/share_this_page
     for (i = 0;i<keyTerms.length;i++) {
         keyTerms[i].innerHTML="⚡"+keyTerms[i].innerHTML;
         }
+    if (window.location.href=="https://banananews.netlify.app/biology/" || window.location.href=="https://banananews.netlify.app/chemistry" || window.location.href=="https://banananews.netlify.app/earthscience" || window.location.href=="https://banananews.netlify.app/physics") {
+        document.body.innerHTML = "<h2><b class='kt'>This is a key term. You should put it in your flashcards!</b></h2>" + document.body.innerHTML;
+    }
