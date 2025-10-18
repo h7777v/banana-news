@@ -48,9 +48,21 @@ https://banana-news.github.io/banana/share_this_page
         keyTerms[i].textContent="⚡"+keyTerms[i].textContent;
         }
     
+        var shown = false
+        var pd = document.getElementById("bgTable");
+    function displayPd(button, state) {
         
-    function displayPd() {
-        pd = document.getElementById("bgTable");
+        if (shown == false) {
+       
         pd.style.display="block";
+        button.textContent = "Hide Periodic Table"
+        shown = true
+        displayPd(button);
+        } else {
+            pd.style.display="none";
+            button.textContent = "Show Periodic Table"
+            shown = false
+            displayPd(button);
+        }
     }
     
