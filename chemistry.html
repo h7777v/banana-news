@@ -2,36 +2,47 @@
 layout: "base.njk"
 title: "Chemistry"
 ---
-<div id="container">
-<h1>Chemistry - Banana News</h1>
+<div id="sci-container">
+ <br>
+    <div class="background">
+              <img src="/images/image-20160510-20731-1pf8nwv.avif">
+              <h1>Chemistry</h1>
+              <p>Credit to The Conversation for the image</p>
+            </div>
 <div class="science-div">
 <h2>Chemistry Overview</h2>
-    <p>Chemistry is the study of elements and their interactions. Everything is made of atoms, which have protons which have a positive charge, electrons (negative), and neutrons (neutral). The number of protons equals the number of electrons in a neutral atom.</p>
+    <p>Chemistry is the study of elements and their interactions. Everything is made of <b class="kt">atoms</b>, which have <b class="kt">protons</b> which have a positive charge, <b class="kt">electrons</b> (negative), and <b class="kt">neutrons</b> (neutral). The number of protons equals the number of electrons in a neutral atom.</p>
 
 </div>
     <div class="science-div">
-    <h2>Understanding the Periodic Table</h2>
-    <p>The periodic table organizes elements into groups (columns) and periods (rows):</p>
+    <h2>Understanding the <b class="kt">Periodic Table</b></h2>
+    <button onclick="displayPd()">Show periodic table</button>
+    <img src="images/Periodic_Table.png" style="height:100%;width:100%;display:none;" id="bgTable">
+    <p>The periodic table organizes <b class="kt">elements</b> into <b class="kt">groups</b> (columns) and <b class="kt">periods</b> (rows):</p>
     <ul>
-        <li><strong>Groups</strong>: Elements in the same group have similar properties. They have the amount of <b>valence</b> electrons as the group number. Valence electrons are the number of electrons in the outer shell.</li>
+        <li><strong>Groups</strong>: Elements in the same group have similar properties. They have the amount of <b class="kt">valence</b> electrons as the group number. Valence electrons are the number of electrons in the outer shell.</li>
         <li><strong>Periods</strong>: Elements in the same period have the same number of electron shells.</li>
     </ul>
     </div>
     <div class="science-div">
-    <p>Isotopes are variants of elements with different numbers of neutrons, often making them unstable and highly reactive.</p>
+    <p><b class="kt">Isotopes</b> are variants of elements with different numbers of neutrons, often making them unstable and highly reactive.</p>
 </div><div class="science-div"><h2>Chemical Bonds</h2>
     <p>Chemical bonds hold atoms together. The main types are:</p>
+    <img src="images/Ionic-Bond-Definition-and-Example.png" height="200">
+    <p>Ionic bond</p>
     <ul>
-        <li><strong>Ionic Bonds</strong>: Form when one atom donates an electron to another, creating oppositely charged ions (cations: positive; anions: negative). For example, Sodium (Na) donates an electron to Chlorine (Cl), forming NaCl (table salt).</li>
-        <li><strong>Covalent Bonds</strong>: Occur when atoms share electrons. Polar covalent bonds involve unequal sharing (e.g., water, where Oxygen attracts Hydrogen's electrons). Non-polar covalent bonds involve equal sharing (e.g., O₂).</li>
-        <li><strong>Metallic Bonds</strong>: Found in metals, where electrons are shared in a "sea" of electrons, allowing conductivity and malleability.</li>
-    </ul></div>
-    
+        <li><strong class="kt">Ionic Bonds</strong>: Form when one atom donates an electron to another, creating oppositely charged ions (cations: positive; anions: negative). For example, Sodium (Na) donates an electron to Chlorine (Cl), forming NaCl (table salt).</li>
+        <li><strong class="kt">Covalent Bonds</strong>: Occur when atoms share electrons. Polar covalent bonds involve unequal sharing (e.g., water, where Oxygen attracts Hydrogen's electrons). Non-polar covalent bonds involve equal sharing (e.g., O₂).</li>
+        <li><strong class="kt">Metallic Bonds</strong>: Found in metals, where electrons are shared in a "sea" of electrons, allowing conductivity and malleability.</li>
+    </ul>
+    <p>Well how are these formed? As you probably know, protons tug on electrons like the positive/negative ends of a magnet. The strength of this tug is <b class="kt">electronegativity</b>. If you have an electronegativity of about 1.7, you get an Ionic bond (one electron gets donated), whereas if it's lower than 0.5 you get a <b class="kt">Nonpolar covalent bond</b> Which means that they have about equal pull and the electrons don't really belong to anyone.</p></div>
 <div class="science-div">
 
-     <h2>The pH Scale</h2>
+     <h2>The <b class="kt">pH Scale</b></h2>
+     <p>When water gains a proton, you get a <b class="kt">Hydronium Ion</b> (H+). (Which is an Ionic bond, refer to above). More acidic = higher concentration of hydronium ions. </p>
+     <p><b class="kt">Acids</b> contain lots of hydronium ions, and they are the donors, meaning they donate a proton (H+) to <b class="kt">bases</b>. (H-) for acids. <b class="kt">Alkalis</b> are just soluble bases, like baking soda.</p>
     <p>The pH scale measures acidity or basicity, ranging from 0 (most acidic) to 14 (most basic), with 7 being neutral. Below is a linear representation of the pH scale with examples:</p>
-
+<p>Some substances are <b class="kt">Amphoteric</b>, which means that they can be both an acid and a base, like water. (Water is just better, it dissolves lots of stuff and can be an acid or base)</p>
     <div class="ph-scale">
         <div class="ph-marker" style="left: 0%;">0</div>
         <div class="ph-marker" style="left: 7.14%;">1</div>
@@ -66,7 +77,7 @@ title: "Chemistry"
         <div>Cement</div>
         <div>Drain Cleaner</div>
     </div>
-<p>Some natural substances can be used as indicators to show pH level. I added baking soda to turmeric solution and it turns from yellow to a darker color, representing high pH. After adding lemon juice, it cancels and turns back to yellow, representing neutral pH.</p>
+<p>Some natural substances can be used as <b class="kt">indicators</b> to show pH level. I added baking soda to turmeric solution (I have no red cabbage) and it turns from yellow to a darker color, representing high pH. After adding lemon juice, it cancels and turns back to yellow, representing neutral pH.</p>
 <img src="/images/ph1.jpeg" height="200" alt="Turmeric solution">
 <p>Turmeric solution</p>
 <img src="/images/hp2.jpeg" height="200" alt="Baking soda added and solution darkens">

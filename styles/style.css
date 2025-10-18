@@ -187,7 +187,10 @@ body {
 background: linear-gradient(180deg,rgba(255, 237, 117, 1) 13%, rgba(188, 237, 83, 1) 100%);
   margin: 20px;
 }
-
+#sci-container{
+  width:50%;
+  margin:auto;
+}
 
 
   

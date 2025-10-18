@@ -43,9 +43,14 @@ https://banana-news.github.io/banana/share_this_page
             scienceDivs[i].innerHTML += "<p>🔥Good job! On to the next topic!🔥</p>";
         }
     }
+    scienceDivs[0].innerHTML = "<h2><b class='kt'>⚡This is a key term. You should put it in your flashcards!</b></h2>" + scienceDivs[0].innerHTML;
     for (i = 0;i<keyTerms.length;i++) {
         keyTerms[i].textContent="⚡"+keyTerms[i].textContent;
         }
     
-        scienceDivs[0].innerHTML = "<h2><b class='kt'>This is a key term. You should put it in your flashcards!</b></h2>" + scienceDivs[0].innerHTML;
+        
+    function displayPd() {
+        pd = document.getElementById("bgTable");
+        pd.style.display="block";
+    }
     
