@@ -33,6 +33,21 @@ https://banana-news.github.io/banana/share_this_page
 
 
 */
+.science-div {
+ background-color: white;
+ border-radius: 30px;
+ color:black;
+ padding:20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+              0 15px 40px rgba(166, 173, 201, 0.2);
+  font-size:30px;
+
+}
+.kt {
+  background-color: lightyellow;
+  padding: 5px;
+  border-bottom: yellow 2px solid;
+}
 #border{
   border-bottom:5px solid white;
   position: absolute;
