@@ -36,13 +36,10 @@ https://banana-news.github.io/banana/share_this_page
         return Math.floor(Math.random()*max);
     }
     for (i = 0;i<scienceDivs.length;i++) {
-        random = getRandom(1);
-        if (random == 1) {
-            scienceDivs[i].innerHTML += "<p>🔥Good job! On to the next topic!🔥</p>";
-        } else {
-            scienceDivs[i].innerHTML += "<p>🔥Good job! On to the next topic!🔥</p>";
-        }
+        random = getRandom(2);
+            scienceDivs[i].innerHTML += "<img src='/images/pixil-gif-drawing(1).gif' height='200'><p>🔥Good job! On to the next topic!🔥</p>";
     }
+    scienceDivs[scienceDivs.length].innerHTML += "<img src='/images/pixil-gif-drawing(2).gif' height='400' style='margin:auto;'><p>Gifts come to people who try. Thanks for learning with Banana News!</p>";
     scienceDivs[0].innerHTML = "<h2><b class='kt'>⚡This is a key term. You should put it in your flashcards!</b></h2>" + scienceDivs[0].innerHTML;
     for (i = 0;i<keyTerms.length;i++) {
         keyTerms[i].textContent="⚡"+keyTerms[i].textContent;
