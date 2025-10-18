@@ -1,9 +1,37 @@
 {
+  "Defaultㅤlayoutㅤ-ㅤDo not remove": {
+    "header": "",
+    "text": "",
+    "img": "",
+    "title": "",
+    "url": ""
+  },
   "Ocean": {
     "header": "Ocean",
     "text": "Navigate through rocks, coral, fish and jellies, each with a different chance of killing you!",
-    "img": "background-image:url('/images/ocean.png')",
+    "img": "/images/ocean.png",
     "title": "https://albertkemp.github.io/scorespace_game",
     "url": "https://albertkemp.github.io/scorespace_game"
+  },
+  "Blockjump": {
+    "header": "Block Jump",
+    "text": "This platformer? took a long time to make....",
+    "img": "/images/blockjump.png",
+    "title": "/blockjump",
+    "url": "/blockjump"
+  },
+  "Image Combiner": {
+    "header": "Image Combiner",
+    "text": "A game that combines images of famous people to images of food.",
+    "img": "/images/trumple.png",
+    "title": "/imagecombiner",
+    "url": "/imagecombiner"
+  },
+  "QuadSelector": {
+    "header": "QuadSelector",
+    "text": "A timed game where you have to select quadrilaterals (shapes with four sides) while the levels get harder and harder.",
+    "img": "/images/qs.png",
+    "title": "https://albertkemp.github.io/quadselector",
+    "url": "https://albertkemp.github.io/quadselector"
   }
 }
