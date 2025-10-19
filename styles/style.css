@@ -33,6 +33,20 @@ https://banana-news.github.io/banana/share_this_page
 
 
 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
 .science-div {
  background-color: white;
  border-radius: 30px;
@@ -40,7 +54,6 @@ https://banana-news.github.io/banana/share_this_page
  padding:20px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
               0 15px 40px rgba(166, 173, 201, 0.2);
-  font-size:30px;
 
 }
 .kt {
@@ -187,7 +200,10 @@ body {
 background: linear-gradient(180deg,rgba(255, 237, 117, 1) 13%, rgba(188, 237, 83, 1) 100%);
   margin: 20px;
 }
-
+#sci-container{
+  width:60%;
+  margin:auto;
+}
 
 
   
