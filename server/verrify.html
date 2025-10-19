@@ -1,0 +1,16 @@
+---
+layout: "base.njk"
+title: "Verrify your email"
+---
+<div>
+    <script>
+        const queryString = window.location.search;
+
+        const urlParams = new URLSearchParams(queryString);
+
+        const parameterValue = urlParams.get('code');
+
+        document.getElementById('code').innerHTML = parameterValue;
+    </script>
+    <p id="code"></p>
+</div>
