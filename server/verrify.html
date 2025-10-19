@@ -1,16 +1,22 @@
----
-layout: "base.njk"
-title: "Verrify your email"
----
-<div>
-    <script>
-        const queryString = window.location.search;
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Verrify your email - Banana News</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <p id="code"></p>
+            <script>
+            const queryString = window.location.search;
 
-        const urlParams = new URLSearchParams(queryString);
+            const urlParams = new URLSearchParams(queryString);
 
-        const parameterValue = urlParams.get('code');
+            const parameterValue = urlParams.get('code');
 
-        document.getElementById('code').innerHTML = parameterValue;
-    </script>
-    <p id="code"></p>
-</div>
+            document.getElementById('code').innerHTML = parameterValue;
+            </script>
+        </div>
+    </body>
+</html>
