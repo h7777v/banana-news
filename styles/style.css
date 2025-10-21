@@ -36,8 +36,8 @@ https://banana-news.github.io/banana/share_this_page
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
   }
   th, td {
     border: 1px solid #dddddd;
@@ -82,6 +82,9 @@ select {
   border: none;
 }
 .background {
+  background-color:#ffeb7b;
+  border-bottom: #ffe135 50px;
+  
   position: relative;
   background-size: cover;
   width: 100%;
@@ -110,7 +113,7 @@ filter:brightness(65%);
 .background h1, .background p, .background h2 {
  position: absolute;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: black;
   left: 50%;
   /* Other styling for the heading (font-size, font-weight, etc.) */
 }
@@ -118,6 +121,7 @@ filter:brightness(65%);
   font-size: 100px;
    
   top: 20%;
+  
 }
 .background h2{
   top:70%;
@@ -198,8 +202,8 @@ h3{
   text-align: center;
 }
 body {
-  background: #ffed75;
-background: linear-gradient(180deg,rgba(255, 237, 117, 1) 13%, rgba(188, 237, 83, 1) 100%);
+  background:white;
+  border-bottom: 50px #ffe135;
   margin: 20px;
 }
 #sci-container{
