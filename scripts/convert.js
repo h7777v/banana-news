@@ -1,6 +1,6 @@
 function convert() {
     var stuff = document.getElementById('codeInput').value;
-    var lines = stuff.split("\n").replace(/</gi, "&lt;").replace(/>/gi, "&gt;")
+    var lines = replace(/</gi, "&lt;").replace(/>/gi, "&gt;").stuff.split("\n");
     var html = ""
     var outputDiv = document.getElementById('output');
 
