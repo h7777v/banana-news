@@ -3,6 +3,7 @@ function convert() {
 <<<<<<< HEAD
     var lines = replace(/</gi, "&lt;").replace(/>/gi, "&gt;").stuff.split("\n");
 =======
+    var lines = stuff.replace(/</gi, "&lt;").replace(/>/gi, "&gt;").split("\n");
 >>>>>>> 875eb9db1683927281f0738744ce62dd375f3de3
     var html = ""
     var outputDiv = document.getElementById('output');

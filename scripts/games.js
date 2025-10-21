@@ -39,6 +39,7 @@ const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){if(i=="Defaultㅤlayo
 const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}');background-repeat: no-repeat;" onclick="window.location.href='${jsonFile[i].url}'"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`};document.getElementById("options").innerHTML=layout;};
 >>>>>>> 1976a70f108722e2fc97cca90c5d774fd8ee902c
 =======
+const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}');background-repeat: no-repeat;" onclick="window.location.href='${jsonFile[i].url}'"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`};document.getElementById("options").innerHTML=layout;};
 >>>>>>> 875eb9db1683927281f0738744ce62dd375f3de3
 
 (async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>loadLayout(data)).catch(error => console.error('Unable to fetch data (games.json):', error));})();
