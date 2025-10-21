@@ -32,7 +32,11 @@ https://banana-news.github.io/banana/share_this_page
 var jsonFile;
 var layout="";
 
-const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}')" onclick="window.location.href='${jsonFile[i].url}'"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`};document.getElementById("options").innerHTML=layout;};
+<<<<<<< HEAD
+const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){if(i=="Defaultㅤlayoutㅤ-ㅤDo not remove"){}else{layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}')" onclick="window.location.href='${jsonFile[i].url}'"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`}};document.getElementById("options").innerHTML=layout;};
+=======
+const loadLayout=(json)=>{jsonFile=json;for(i in jsonFile){layout+=`<div class="options-div" title="${jsonFile[i].title}" style="background-image:url('${jsonFile[i].img}');background-repeat: no-repeat;" onclick="window.location.href='${jsonFile[i].url}'"><h2>${jsonFile[i].header}</h2><p>${jsonFile[i].text}</p></div>`};document.getElementById("options").innerHTML=layout;};
+>>>>>>> 1976a70f108722e2fc97cca90c5d774fd8ee902c
 
 (async()=>{await fetch('../data/games.json').then(response=>{if(!response.ok){throw new Error(`HTTP error retrieving games.json!Status: ${response.status}`);}return response.json();}).then(data=>loadLayout(data)).catch(error => console.error('Unable to fetch data (games.json):', error));})();
 
