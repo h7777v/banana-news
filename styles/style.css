@@ -113,7 +113,7 @@ filter:brightness(65%);
 .background h1, .background p, .background h2 {
  position: absolute;
   transform: translate(-50%, -50%);
-  color: black;
+  color: #ffffff;
   left: 50%;
   /* Other styling for the heading (font-size, font-weight, etc.) */
 }
@@ -202,8 +202,7 @@ h3{
   text-align: center;
 }
 body {
-  background:white;
-  border-bottom: 50px #ffe135;
+  background-color: #ffe135;
   margin: 20px;
 }
 #sci-container{
