@@ -66,5 +66,6 @@ function convert() {
         // Empty lines are skipped
     }
     html = html.replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
+    html = html.replace(/\n/gi, "<br>");
     outputDiv.innerHTML = html;
 }
