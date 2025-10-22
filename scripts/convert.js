@@ -37,5 +37,5 @@ function convert() {
 
         }
     }
-    outputDiv.innerHTML = `<p>${html}</p>`;
+    outputDiv.innerHTML = html;
 }
