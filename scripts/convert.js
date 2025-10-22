@@ -40,11 +40,11 @@ function convert() {
 
         if (line.startsWith("# ")) {
             // H1 is correctly handled
-            line = `<h1>${line.slice(2)}</h1>`;
+            line = `<h1>${line.slice(2)}</h1>\n`;
             html += line;
         } else if (line.startsWith("## ")) {
             // H2 is correctly handled
-            line = `<h2>${line.slice(3)}</h2>`;
+            line = `<h2>${line.slice(3)}</h2>\n`;
             html += line;
         } else if (line.trim().length > 0) { // Check if the line isn't empty (or just whitespace)
 
@@ -60,7 +60,7 @@ function convert() {
             line = line.replace(/`(.*?)`/g, "<code>$1</code>");
 
             // 2. Wrap the line in a paragraph tag after all inline replacements
-            line = `<p>${line}</p>`;
+            line = `<p>${line}</p>\n`;
             html += line;
         }
         // Empty lines are skipped
