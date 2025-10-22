@@ -14,7 +14,7 @@ function convert() {
         } else {
             if (lines[i].includes("**")) {
                 while (lines[i].includes("**")) {
-                    lines[i] = lines[i].split("**", 1).join("<b>");
+                    lines[i] = lines[i].split("**", 1).join("<b class='kt'>");
                     lines[i] = lines[i].split("**", 1).join("</b>");
                 }
                 lines[i] = `<p>${lines[i]}</p>`;
