@@ -68,7 +68,6 @@ https://banana-news.github.io/banana/share_this_page
   
   background: rgba(0, 0, 0, 0.3); /* Adjust opacity as desired */
   z-index: -1;
-  border-radius: 8px;
 }
 .options-div h2, .options-div p, .newtab-div h2, .newtab-div p {
   color:white;
