@@ -393,9 +393,7 @@ border-radius:2px}
   margin: auto;
 }
 
-img{
-  border-radius: 20px;
-}
+
 /*PLEASE don't change table styling (below) it will mess it up*/
 tr:nth-child(even){
   background-color: #919191;

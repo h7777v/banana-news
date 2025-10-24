@@ -38,9 +38,7 @@ https://banana-news.github.io/banana/share_this_page
 .options {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   background-color: #00000000;
-  padding: 20px;
 }
 
 .options-div, .newtab-div {
