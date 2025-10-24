@@ -67,5 +67,6 @@ function convert() {
     }
     html = html.replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
     html = html.replace(/\n/gi, "<br>");
+    html = `<div class="science-div">${html}</div>`;
     outputDiv.innerHTML = html;
 }
