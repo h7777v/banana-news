@@ -202,7 +202,7 @@ h3{
   text-align: center;
 }
 body {
-  background-color: #ffe135;
+  background: linear-gradient(#ffe135, rgb(90, 253, 90));
   margin: 20px;
 }
 #sci-container{
