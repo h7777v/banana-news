@@ -61,5 +61,96 @@
     "img": "/images/JSFS.png",
     "title": "https://albertkemp.github.io/JSFS",
     "url": "https://albertkemp.github.io/JSFS"
+  },
+  "LemonBouncer": {
+    "header": "Lemon bouncer",
+    "text": "Bounce a lemon and gain bounces from doing so.<br><p style=\"color:green;\">&#9432; This game is originally from TwoLemon.fun. Visit at <a target=\"_blank\" href=\"https://mootcy.github.io/TwoLemon.fun\">https://mootcy.github.io/TwoLemon.fun</a></p>",
+    "img": "/images/lemonbouncer.png",
+    "title": "https://mootcy.github.io/TwoLemon.fun/lemonBouncer",
+    "url": "https://mootcy.github.io/TwoLemon.fun/lemonBouncer"
+  },
+  "SpaceExplorer": {
+    "header": "Space Explorer",
+    "text": "Space Explorer is back with 7 new planets and an end goal, planets including planets with holes, tunnels and deserts!",
+    "img": "/images/spacepalm.png",
+    "title": "https://albertkemp.github.io/space-explorer",
+    "url": "https://albertkemp.github.io/space-explorer"
+  },
+  "FlappyLemon": {
+    "header": "Flappy lemon",
+    "text": "Flappy bird but with a lemon.<br><p style=\"color:green;\">&#9432; This game is originally from TwoLemon.fun. Visit at <a target=\"_blank\" href=\"https://mootcy.github.io/TwoLemon.fun\">https://mootcy.github.io/TwoLemon.fun</a></p>",
+    "img": "/images/flappylemon.png",
+    "title": "https://mootcy.github.io/TwoLemon.fun/flappyLemon",
+    "url": "https://mootcy.github.io/TwoLemon.fun/flappyLemon"
+  },
+  "DocumentEditor": {
+    "header": "Document editor",
+    "text": "A document editor providing formatting and font size.",
+    "img": "/images/docs.png",
+    "title": "https://albertkemp.github.io/games-tools/test",
+    "url": "https://albertkemp.github.io/games-tools/test"
+  },
+  "LemonShooter": {
+    "header": "Lemon shooter",
+    "text": "A game where you shoot a target as a lemon.<br><p style=\"color:green;\">&#9432; This game is originally from TwoLemon.fun. Visit at <a target=\"_blank\" href=\"https://mootcy.github.io/TwoLemon.fun\">https://mootcy.github.io/TwoLemon.fun</a></p>",
+    "img": "/images/lemonshooter.png",
+    "title": "https://mootcy.github.io/TwoLemon.fun/lemonShooter",
+    "url": "https://mootcy.github.io/TwoLemon.fun/lemonShooter"
+  },
+  "LemonEater": {
+    "header": "Lemon eater",
+    "text": "A game where you eat lemons.<br><p style=\"color:green;\">&#9432; This game is originally from TwoLemon.fun. Visit at <a target=\"_blank\" href=\"https://mootcy.github.io/TwoLemon.fun\">https://mootcy.github.io/TwoLemon.fun</a></p>",
+    "img": "/images/lemoneater.png",
+    "title": "https://mootcy.github.io/TwoLemon.fun/lemonEater",
+    "url": "https://mootcy.github.io/TwoLemon.fun/lemonEater"
+  },
+  "CoinFlip": {
+    "header": "Coin flip",
+    "text": "A coin flipping tool.",
+    "img": "https://www.coincuriosity.com/media/1545859193/1983-australia-5-cents-reverse.png",
+    "title": "https://albertkemp.github.io/coinflip",
+    "url": "https://albertkemp.github.io/coinflip"
+  },
+  "LemonClicker": {
+    "header": "Lemon clicker",
+    "text": "A clicker game with lemons.<br><p style=\"color:green;\">&#9432; This game is originally from TwoLemon.fun. Visit at <a target=\"_blank\" href=\"https://mootcy.github.io/TwoLemon.fun\">https://mootcy.github.io/TwoLemon.fun</a></p>",
+    "img": "/images/lemonclicker.png",
+    "title": "https://mootcy.github.io/TwoLemon.fun/lemonClicker",
+    "url": "https://mootcy.github.io/TwoLemon.fun/lemonClicker"
+  },
+  "BananaJump": {
+    "header": "Banana jump",
+    "text": "An obstacle dodging game where you jump over obstacles.",
+    "img": "/images/logosvg.svg",
+    "title": "/bananajump",
+    "url": "/bananajump"
+  },
+  "RabbitStew": {
+    "header": "Rabbit stew",
+    "text": "A game about collecting ingredients for rabbit stew.",
+    "img": "/images/rabbitstew.png",
+    "title": "/rabbitstew",
+    "url": "/rabbitstew"
+  },
+  "SpendElonMoney": {
+    "header": "Spend Elon Musk's money",
+    "text": "A game where you spend Elon Musk's money on objects of increasing price. You get a receipt at the end.",
+    "img": "/images/a380.jpg",
+    "title": "/elonmoney",
+    "url": "/elonmoney"
+  },
+  "DrawLogosFromMemory": {
+    "header": "Draw logos from memory",
+    "text": "A game where you have to draw logos of big companies from memory",
+    "img": "/images/microsoft.png",
+    "title": "/drawmemory",
+    "url": "/drawmemory"
+  },
+  "ShareThisSite": {
+    "header": "Share this site",
+    "text": "A page where you can share the page through many options.<br>",
+    "img": "/images/sharethispageimage.png",
+    "title": "/share_this_page",
+    "url": "/share_this_page"
   }
 }

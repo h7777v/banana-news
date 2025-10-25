@@ -1,0 +1,14 @@
+h1{
+ font-family: 'Roboto', sans-serif;
+ font-size:70px;
+ color:#ffe135;
+}
+p{
+    font-family:'Open Sans', sans-serif;
+    color: black;
+    font-size:30px;
+}
+#cont{
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+}
