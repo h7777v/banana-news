@@ -17,25 +17,23 @@
                 let done = false
                 setInterval(()=>{
                     if(uuid != 0 && done==false){
+                        done = true
                         buildReq(3, [parameterValue], "server", 1, 0)
                         setInterval(()=>{
                             if(GetRes(1)){
                                 if(GetRes(1)["content"]["status"]==200){
                                     document.getElementById("title").innerHTML="Email verification success"
                                     document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>'
-                                    done = true
                                 } else if(GetRes(1)["content"]["status"]==403){
                                     document.getElementById("title").innerHTML="Email verification failed"
                                     document.getElementById("text").innerHTML='The link you provided was invalid or expired. <br><button onclick="window.location.href=`../`">Back to banana news</button>'
-                                    done = true
                                 } else {
                                     document.getElementById("title").innerHTML="Invalid server reponse"
-                                    done = true
                                 }
                             }
                         }, 5)
                     }
-                }, 5)
+                }, 50)
             }
             </script>
             <div>
