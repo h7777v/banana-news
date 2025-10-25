@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Verrify your email - Banana News</title>
+        <title>Verify your email - Banana News</title>
         <script src="adapter.js"></script>
+        <link rel="stylesheet" href="../styles/verify.css">
+        <link rel="stylesheet" href="../styles/searchresults.css">
     </head>
     <body>
         <div>
@@ -21,10 +23,12 @@
                         setInterval(()=>{
                             if(GetRes(1)){
                                 if(GetRes(1)["content"]["status"]==200){
+                                    document.getElementById("cont").innerHTML = `<img src='../images/pixil-frame(2).gif' height='200'>`;
                                     document.getElementById("title").innerHTML="Email verification success"
                                     document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>'
                                     done = true
                                 } else if(GetRes(1)["content"]["status"]==403){
+                                    document.getElementById("animation").style.display="block";
                                     document.getElementById("title").innerHTML="Email verification failed"
                                     document.getElementById("text").innerHTML='The link you provided was invalid or expired. <br><button onclick="window.location.href=`../`">Back to banana news</button>'
                                     done = true
@@ -38,7 +42,24 @@
                 }, 5)
             }
             </script>
-            <div>
+            <div id="cont">
+                <div id='animation' style="display:none;">
+            <div id='banana'>
+                <div id='first'></div>
+                <div id='second'></div>
+                <div id='third'></div>
+                <div id='fourth'></div>
+                <div id='mouth'></div>
+                <div id='eye1'></div>
+                <div id='eye2'></div>
+                
+            </div>
+            <div id='mark1'><h2>?</h2></div>
+            <div id='mark2'><h2>?</h2></div>
+            <div id='mark3'><h2>?</h2></div>
+            <div id='mark4'><h2>?</h2></div>
+            <div id='mark5'><h2>?</h2></div>
+        </div>
                 <h1 id="title"></h1>
                 <p id="text"></p>
             </div>
