@@ -10,6 +10,7 @@
     <body>
         <div>
             <script>
+            var shown = false;
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const parameterValue = urlParams.get('code');
@@ -24,7 +25,11 @@
                         setInterval(()=>{
                             if(GetRes(1)){
                                 if(GetRes(1)["content"]["status"]==200){
-                                    document.getElementById("cont").innerHTML = `<img src='../images/pixil-gif-drawing(2).gif' height='200'>${document.getElementById("cont").innerHTML}`;
+                                    if (!shown) {
+                                        document.getElementById("cont").innerHTML = `<img src='../images/pixil-gif-drawing(2).gif' height='200'>${document.getElementById("cont").innerHTML}`;
+                                        shown = true;
+                                    }
+                                    
                                     document.getElementById("title").innerHTML="Email verification success"
                                     document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>'
                                 } else if(GetRes(1)["content"]["status"]==403){
