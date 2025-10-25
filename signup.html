@@ -1,10 +1,15 @@
 ---
 layout: "base.njk"
 title: "Sign Up"
+withServer: "True"
 ---
 <h1>Sign Up for an Account</h1>
 
 <form id="signupForm">
+  <div>
+    <label for="username">username:</label>
+    <input type="username" id="username" required>
+  </div>
   <div>
     <label for="email">Email:</label>
     <input type="email" id="email" required>
@@ -20,7 +25,18 @@ title: "Sign Up"
 
 <p>Already have an account? <a href="/login/">Log In</a></p>
 
-<script type="module">
+<script>
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById("username").emailInput.value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    buildReq(2, [username, email, password], "server", 1, 1)
+    document.getElementById("message").innerHTML="Please check your email the link will expire in 10 minutes. <br>Can't find it... check your spam and junk folders. "
+  })
+</script>
+
+<script type="module">/*
   // All imports now use the bare specifier "firebase/..."
   import { initializeApp } from "firebase/app"; 
   import { 
@@ -91,5 +107,5 @@ title: "Sign Up"
     const credential = GoogleAuthProvider.credentialFromError(error);
     console.error("Sign-in failed:", errorMessage);
   });
-  });
+  });*/
 </script>
