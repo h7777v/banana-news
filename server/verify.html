@@ -11,7 +11,7 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const parameterValue = urlParams.get('code');
-            if(parameterValue==""){
+            if(parameterValue==""||parameterValue==null||parameterValue==undefined){
                 window.location.href="../"
             } else {
                 buildReq(3, [parameterValue], "server", 1, 0)
