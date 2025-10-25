@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Verrify your email - Banana News</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <srcipt src="adapter.js"></srcipt>
+            <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const parameterValue = urlParams.get('code');
+            if(parameterValue==""){
+                window.location.href="../"
+            } else {
+                buildReq(3, [parameterValue], "server", 1, 0)
+                setInterval(()=>{
+                    if(GetRes(1)){
+                        if(GetRes(1)["content"]["status"]==200){
+                            document.getElementById("title").innerHTML="Email verification success"
+                            document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>'
+                        } else if(GetRes(1)["content"]["status"]==403){
+                            document.getElementById("title").innerHTML="Email verification failed"
+                            document.getElementById("text").innerHTML='The link you provided was invalid or expired. <br><button onclick="window.location.href=`../`">Back to banana news</button>'
+                        } else {
+                            document.getElementById("title").innerHTML="Invalid server reponse"
+                        }
+                    }
+                }, 5)
+            }
+            </script>
+            <div>
+                <h1 id="title"></h1>
+                <p id="text"></p>
+            </div>
+        </div>
+    </body>
+</html>
