@@ -32,7 +32,21 @@ withServer: "True"
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     buildReq(2, [username, email, password], "server", 1, 1)
-    document.getElementById("message").innerHTML="Please check your email the link will expire in 10 minutes. <br>Can't find it... check your spam and junk folders. "
+    setInterval(()=>{
+      if(GetRes(1)!=undefined){
+        if(GetRes(1).content.status==200){
+          document.getElementById("message").innerHTML="Please check your email the link will expire in 10 minutes. <br>Can't find it... check your spam and junk folders. "
+        } else if(GetRes(1).content.status==422){
+          document.getElementById("message").innerHTML="Username, email or password must be able to be encoded in ascii. "
+        } else if(GetRes(1).content.status==400){
+          document.getElementById("message").innerHTML="Email already exists. "
+        } else if(GetRes(1).content.status==400.5){
+          document.getElementById("message").innerHTML="Username already exists. "
+        } else {
+          document.getElementById("message").innerHTML="Invalid server response. "
+        }
+      }
+    }, 5)
   })
 </script>
 
