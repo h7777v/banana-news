@@ -1,20 +1,42 @@
 ---
 layout: "base.njk"
 title: "Login"
+withServer: "True"
 ---
 
 <h1>Log In</h1>
 
 <form id="loginForm">
-  <label for="email">Email:</label>
-  <input type="email" id="email" required>
+  <label for="email">Username:</label>
+  <input type="email" id="username" required>
   <label for="password">Password:</label>
   <input type="password" id="password" required>
   <button type="submit" style="color: black";>Log In</button>
 </form>
 
+<p id="message"></p>
+
 <p>Don't have an account? <a href="/signup">Sign Up</a></p>
-<script type="module">
+<script>
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById("username").value
+    const password = document.getElementById("username").value
+    buildReq(4, [username, password], "server", 1, 0)
+    setInterval(function(){
+      if(getRes(1)!=undefined){
+        if(getRes(1)["content"]["status"]==200){
+          document.getElementById("message").innerHTML="Login sucess!"
+        }else if(getRes(1)["content"]["status"]==403){
+          document.getElementById("message").innerHTML="Invalid username or password"
+        }else{
+          document.getElementById("message").innerHTML="Invalid server response"
+        }
+      }
+    })
+  })
+</script>
+<script type="module">/*
   // Import the necessary Firebase functions
   import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
@@ -61,5 +83,5 @@ title: "Login"
         console.error('Login failed:', errorMessage);
         // You could display the error message to the user here
       });
-  });
+  });*/
 </script>
