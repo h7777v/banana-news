@@ -14,6 +14,8 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const parameterValue = urlParams.get('code');
+            let hydro = document.querySelector("#hydro");
+            let bn = document.querySelector("#bn");
             if(parameterValue==""||parameterValue==null||parameterValue==undefined){
                 window.location.href="../"
             } else {
@@ -26,13 +28,17 @@
                             if(GetRes(1)){
                                 if(GetRes(1)["content"]["status"]==200){
                                     if (!shown) {
-                                        document.getElementById("cont").innerHTML = `<img src='../images/pixil-gif-drawing(2).gif' style='float:left;' height='100'>${document.getElementById("cont").innerHTML}`;
+                                        bn.style.display="block";
                                         shown = true;
                                     }
                                     
                                     document.getElementById("title").innerHTML="Email verification success"
                                     document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>'
                                 } else if(GetRes(1)["content"]["status"]==403){
+                                    if (!shown) {
+                                        hydro.style.display="block";
+                                        shown = true;
+                                    }
                                     document.getElementById("animation").style.display="block";
                                     document.getElementById("title").innerHTML="Email verification failed"
                                     document.getElementById("text").innerHTML='The link you provided was invalid or expired. <br><button onclick="window.location.href=`../`">Back to banana news</button>'
@@ -47,23 +53,8 @@
             </script>
             <script src="../scripts/searchlogic.js"></script>
             <div id="cont">
-                <div id='animation' style="display:none;float:left;">
-            <div id='banana'>
-                <div id='first'></div>
-                <div id='second'></div>
-                <div id='third'></div>
-                <div id='fourth'></div>
-                <div id='mouth'></div>
-                <div id='eye1'></div>
-                <div id='eye2'></div>
-                
-            </div>
-            <div id='mark1'><h2>?</h2></div>
-            <div id='mark2'><h2>?</h2></div>
-            <div id='mark3'><h2>?</h2></div>
-            <div id='mark4'><h2>?</h2></div>
-            <div id='mark5'><h2>?</h2></div>
-        </div>
+                <img src="../images/4HU3vc.gif" height="100" id="hydro" style="display:none;">
+                <img src="../images/pixil-gif-drawing(2).gif" height="100" id="bn" style="display:none;">
                 <h1 id="title"></h1>
                 <p id="text"></p>
             </div>
