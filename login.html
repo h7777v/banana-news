@@ -21,7 +21,7 @@ withServer: "True"
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById("username").value
-    const password = document.getElementById("username").value
+    const password = document.getElementById("password").value
     buildReq(4, [username, password], "server", 1, 0)
     setInterval(function(){
       if(GetRes(1)!=undefined){
