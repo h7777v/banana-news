@@ -36,8 +36,8 @@ https://banana-news.github.io/banana/share_this_page
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
   }
   th, td {
     border: 1px solid #dddddd;
@@ -82,6 +82,9 @@ select {
   border: none;
 }
 .background {
+  background-color:#ffeb7b;
+  border-bottom: #ffe135 50px;
+  
   position: relative;
   background-size: cover;
   width: 100%;
@@ -95,7 +98,7 @@ select {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as desired */
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity as desired */
   z-index: -1;
 }
 
@@ -116,8 +119,9 @@ filter:brightness(65%);
 }
 .background h1{
   font-size: 100px;
-   
+   font-family: 'Comfortaa', sans-serif; 
   top: 20%;
+  
 }
 .background h2{
   top:70%;
@@ -143,24 +147,39 @@ a:hover{
   text-decoration: underline;
 }
 button {
-  font-size: 16px;                     /* Apple uses slightly smaller, refined text */
-  font-weight: 500;                    /* medium weight */
-  border-radius: 9999px;               /* pill shape */
-  padding: 10px 24px;                  /* balanced padding */
-  background-color: #236e1e;           /* rich brown tone */
-  color: #ffffff;                      /* fine white text */
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  border: none;                        /* no hard borders */
+  border: none;
   cursor: pointer;
-  transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+  
+  /* Classic Liquid Glass Effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  
+  transition: all 0.25s ease;
 }
 
 button:hover {
-  background-color: #5a3e18;           /* darker brown on hover */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow */
-  transform: translateY(-1px);         /* slight lift */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
-
 
   h1{
     font-family: 'IBM Plex Serif', serif;
@@ -198,8 +217,7 @@ h3{
   text-align: center;
 }
 body {
-  background: #ffed75;
-background: linear-gradient(180deg,rgba(255, 237, 117, 1) 13%, rgba(188, 237, 83, 1) 100%);
+  background: linear-gradient(#fff6c2, rgb(189, 255, 189));
   margin: 20px;
 }
 #sci-container{
@@ -390,9 +408,7 @@ border-radius:2px}
   margin: auto;
 }
 
-img{
-  border-radius: 20px;
-}
+
 /*PLEASE don't change table styling (below) it will mess it up*/
 tr:nth-child(even){
   background-color: #919191;

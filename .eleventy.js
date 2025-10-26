@@ -8,4 +8,5 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("shareimages");
   eleventyConfig.addPassthroughCopy("data");
   eleventyConfig.addPassthroughCopy("server");
+  eleventyConfig.addPassthroughCopy("fonts");
 };
