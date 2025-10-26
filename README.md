@@ -1,5 +1,5 @@
 # Banana News
-## 1500 commits on main repository, 150 commits on new repository! 💯 🎉🥳
+## 1500 commits on main repository, 400 commits on new repository! 💯 🎉🥳
 ## The all-new Banana News with eleventy SSG and nunjucks!
 News, tech, politics, games, geography, maths and science site
 <img src="/images/logosvg.svg" height="200px" alt="Our logo">
