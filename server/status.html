@@ -19,8 +19,8 @@
                     const timeAdapter = performance.now()
                     buildReq(0, [], "adapter", 2, 0)
                     setInterval(function(){
-                        if(GetRes(1)==undefined||doneS==undefined){}else{
-                            doneS=true
+                        if(GetRes(1)==undefined||doneS===null){}else{
+                            doneS=null
                             serverLatency = performance.now() - timeServer
                             document.getElementById("statusS").innerHTML="Online"
                             document.getElementById("LatencyS").innerHTML=`${serverLatency}ms`
@@ -30,8 +30,8 @@
                             document.getElementById("LagTitleS").style.display="block"
                             document.getElementById("LagS").style.display="block"
                         }
-                        if(GetRes(2)==undefined||doneA===undefined){}else{
-                            doneA=true
+                        if(GetRes(2)==undefined||doneA===null){}else{
+                            doneA=null
                             adapterLatency = performance.now() - timeAdapter
                             document.getElementById("statusA").innerHTML="Online"
                             document.getElementById("LatencyA").innerHTML=`${serverLatency}ms`
