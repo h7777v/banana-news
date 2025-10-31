@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Server status - Banana News dev</title>
+        <link rel="icon" href="/images/logosvg.svg">
+        <script src="adapter.js"></script>
+        <script async>
+            let done = false
+            setInterval(()=>{
+                if(uuid != 0 && done==false){
+                    done = true
+                    const timeServer = performance.now()
+                    buildReq(0, [], "server", 1, 0)
+                    const timeAdapter = performance.now()
+                    buildReq(0, [], "adapter", 2, 0)
+                    setInterval(function(){
+                        if(GetRes(1)==undefined){}else{
+                            //
+                        }
+                    })
+                }
+            }, 10)
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1 id="Server"></h1>
+            <h2>status: </h1>
+            <p id="statusS">Unknown</p>
+            <h2 id="LatencyTitleS">Latency: </h1>
+            <p id="LatencyS">1000ms</p>
+            <h2 id="LagTitleS">Lag: </h1>
+            <p id="LagS">Unknown</p>
+            <h1 id="Adapter"></h1>
+            <script>
+                document.getElementById("LatencyTitleS").style.display="none"
+                document.getElementById("LatencyS").style.display="none"
+                document.getElementById("LagTitleS").style.display="none"
+                document.getElementById("LagS").style.display="none"
+            </script>
+        </div>
+    </body>
+</html>
