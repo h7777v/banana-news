@@ -10,17 +10,36 @@
             setInterval(()=>{
                 if(uuid != 0 && done==false){
                     done = true
+                    var serverLatency
+                    var adapterLatency
                     const timeServer = performance.now()
                     buildReq(0, [], "server", 1, 0)
                     const timeAdapter = performance.now()
                     buildReq(0, [], "adapter", 2, 0)
                     setInterval(function(){
                         if(GetRes(1)==undefined){}else{
-                            //
+                            serverLatency = performance.now() - timeServer
+                            document.getElementById("statusS").innerHTML="Online"
+                            document.getElementById("LatencyS").innerHTML=`${serverLatency}ms`
+                            document.getElementById("LagS").innerHTML=(serverLatency <= 20) ? "None" : (serverLatency <= 50) ? "Low" : (serverLatency <= 100) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
+                            document.getElementById("LatencyTitleS").style.display="block"
+                            document.getElementById("LatencyS").style.display="block"
+                            document.getElementById("LagTitleS").style.display="block"
+                            document.getElementById("LagS").style.display="block"
                         }
-                    })
+                        if(GetRes(2)==undefined){}else{
+                            adapterLatency = performance.now() - timeAdapter
+                            document.getElementById("statusA").innerHTML="Online"
+                            document.getElementById("LatencyA").innerHTML=`${serverLatency}ms`
+                            document.getElementById("LagA").innerHTML=(serverLatency <= 20) ? "None" : (serverLatency <= 50) ? "Low" : (serverLatency <= 100) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
+                            document.getElementById("LatencyTitleA").style.display="block"
+                            document.getElementById("LatencyA").style.display="block"
+                            document.getElementById("LagTitleA").style.display="block"
+                            document.getElementById("LagA").style.display="block"
+                        }
+                    }, 0)
                 }
-            }, 10)
+            }, 5)
         </script>
     </head>
     <body>
@@ -33,11 +52,21 @@
             <h2 id="LagTitleS">Lag: </h1>
             <p id="LagS">Unknown</p>
             <h1 id="Adapter"></h1>
+            <h2>status: </h1>
+            <p id="statusA">Unknown</p>
+            <h2 id="LatencyTitleA">Latency: </h1>
+            <p id="LatencyA">1000ms</p>
+            <h2 id="LagTitleA">Lag: </h1>
+            <p id="LagA">Unknown</p>
             <script>
                 document.getElementById("LatencyTitleS").style.display="none"
                 document.getElementById("LatencyS").style.display="none"
                 document.getElementById("LagTitleS").style.display="none"
                 document.getElementById("LagS").style.display="none"
+                document.getElementById("LatencyTitleA").style.display="none"
+                document.getElementById("LatencyA").style.display="none"
+                document.getElementById("LagTitleA").style.display="none"
+                document.getElementById("LagA").style.display="none"
             </script>
         </div>
     </body>
