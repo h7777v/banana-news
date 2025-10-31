@@ -19,8 +19,8 @@
                     const timeAdapter = performance.now()
                     buildReq(0, [], "adapter", 2, 0)
                     setInterval(function(){
-                        if(GetRes(1)==undefined||doneS===undefined){}else{
-                            doneS=null
+                        if(GetRes(1)==undefined||doneS==undefined){}else{
+                            doneS=true
                             serverLatency = performance.now() - timeServer
                             document.getElementById("statusS").innerHTML="Online"
                             document.getElementById("LatencyS").innerHTML=`${serverLatency}ms`
@@ -31,7 +31,7 @@
                             document.getElementById("LagS").style.display="block"
                         }
                         if(GetRes(2)==undefined||doneA===undefined){}else{
-                            doneA=null
+                            doneA=true
                             adapterLatency = performance.now() - timeAdapter
                             document.getElementById("statusA").innerHTML="Online"
                             document.getElementById("LatencyA").innerHTML=`${serverLatency}ms`
@@ -48,14 +48,14 @@
     </head>
     <body>
         <div>
-            <h1 id="Server"></h1>
+            <h1>Server:</h1>
             <h2>status: </h1>
             <p id="statusS">Unknown</p>
             <h2 id="LatencyTitleS">Latency: </h1>
             <p id="LatencyS">1000ms</p>
             <h2 id="LagTitleS">Lag: </h1>
             <p id="LagS">Unknown</p>
-            <h1 id="Adapter"></h1>
+            <h1>Adapter:</h1>
             <h2>status: </h1>
             <p id="statusA">Unknown</p>
             <h2 id="LatencyTitleA">Latency: </h1>
