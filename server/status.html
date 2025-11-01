@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Server status - Banana dev</title>
+        <title>Server status - Banana News dev</title>
         <link rel="icon" href="/images/logosvg.svg">
         <script src="adapter.js"></script>
         <script async>
@@ -34,8 +34,8 @@
                             doneA=null
                             adapterLatency = performance.now() - timeAdapter
                             document.getElementById("statusA").innerHTML="Online"
-                            document.getElementById("LatencyA").innerHTML=`${serverLatency}ms`
-                            document.getElementById("LagA").innerHTML=(serverLatency <= 20) ? "None" : (serverLatency <= 50) ? "Low" : (serverLatency <= 100) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
+                            document.getElementById("LatencyA").innerHTML=`${adapterLatency}ms`
+                            document.getElementById("LagA").innerHTML=(adapterLatency <= 20) ? "None" : (adapterLatency <= 50) ? "Low" : (adapterLatency <= 100) ? "Moderate" : (adapterLatency <= 1000) ? "Heavy" : "Extreme"
                             document.getElementById("LatencyTitleA").style.display="block"
                             document.getElementById("LatencyA").style.display="block"
                             document.getElementById("LagTitleA").style.display="block"
