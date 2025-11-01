@@ -5,7 +5,7 @@ How to add a page:
 <code>
 ---
 layout: "base.njk"
-title: "Home" (this is a comment: Notice that there is no - Banana News, that will be automatically handled)
+title: "Home" (this is a comment: Notice that there is no - Banana, that will be automatically handled)
 ---
 Your page's body content goes here, without anything like topnavs, head tags, footers or stylesheets.
 e.g. 
