@@ -15,7 +15,6 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const parameterValue = urlParams.get('code');
-            let hydro = document.querySelector("#hydro");
             let bn = document.querySelector("#bn");
             if(parameterValue==""||parameterValue==null||parameterValue==undefined){
                 window.location.href="../"
@@ -33,18 +32,13 @@
                                         shown = true;
                                     }
                                     
-                                    document.getElementById("title").innerHTML="Email verification success"
-                                    document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>'
+                                    document.getElementById("title").innerHTML="Email verification success";
+                                    document.getElementById("text").innerHTML='You may proceed to login: <br><button onclick="window.location.href=`../login`">Login</button>';
                                 } else if(GetRes(1)["content"]["status"]==403){
-                                    if (!shown) {
-                                        hydro.style.display="block";
-                                        shown = true;
-                                    }
-                                    document.getElementById("animation").style.display="block";
-                                    document.getElementById("title").innerHTML="Email verification failed"
-                                    document.getElementById("text").innerHTML='The link you provided was invalid or expired. <br><button onclick="window.location.href=`../`">Back to Banana</button>'
+                                    document.getElementById("title").innerHTML="Email verification failed";
+                                    document.getElementById("text").innerHTML='The link you provided was invalid or expired. <br><button onclick="window.location.href=`../`">Back to Banana</button>';
                                 } else {
-                                    document.getElementById("title").innerHTML="Invalid server reponse"
+                                    document.getElementById("title").innerHTML="Invalid server reponse";
                                 }
                             }
                         }, 5)
@@ -54,7 +48,6 @@
             </script>
             <script src="../scripts/searchlogic.js"></script>
             <div id="cont">
-                <img src="../images/4HU3vc.gif" height="100" id="hydro" style="display:none;">
                 <img src="../images/pixil-gif-drawing(2).gif" height="100" id="bn" style="display:none;">
                 <h1 id="title"></h1>
                 <p id="text"></p>
