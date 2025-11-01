@@ -75,6 +75,7 @@ function convert() {
     } else if (value==="option2") {
       html = `<div class="science-div">${html}</div>`;
     }
+    console.log(value);
     
     outputDiv.innerHTML = html;
 }
