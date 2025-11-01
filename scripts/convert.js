@@ -67,6 +67,14 @@ function convert() {
     }
     html = html.replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
     html = html.replace(/\n/gi, "<br>");
-    html = `<div class="science-div">${html}</div>`;
+
+    const selectElement = document.getElementById("mySelect");
+    const value = selectElement.value;
+    if (value==="option1") {
+      html = `<div class="newsdiv">${html}</div>`;
+    } else if (value==="option2") {
+      html = `<div class="science-div">${html}</div>`;
+    }
+    
     outputDiv.innerHTML = html;
 }

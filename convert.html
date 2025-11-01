@@ -3,6 +3,12 @@ layout: "base.njk"
 title: "Convert MD to HTML"
 ---
 <h2>Convert your MD to HTML here! </h2>
+<label for="mySelect">Please Select a mode:</label>
+<select id="mySelect" name="myOption">
+  <option value="option1">News article</option>
+  <option value="option2">Science topic</option>
+  <option value="option3">Raw HTML</option>
+</select>
 <textarea id="codeInput"></textarea>
 <div id="output"></div>
 <button onclick="convert()">Convert</button>

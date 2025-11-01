@@ -44,14 +44,14 @@
   "back_in_time": {
     "header": "Back in time",
     "text": "Browse through older versions of Banana!",
-    "img": "/image/backintime.png",
+    "img": "/images/backintime.png",
     "title": "https://albertkemp.github.io/back_in_time",
     "url": "https://albertkemp.github.io/back_in_time"
   },
   "chinese-new-year": {
     "header": "Chinese New Year 2024",
     "text": "Chinese New Year! I spent ages on these animations<br><p style=\"color:red;\">Yes, yes, it's not Chinese New Year but I wanted to make a game!😀</p>",
-    "img": "../images/pngtree-year-of-the-dragon-red-packet-spring-festival-red-packet-three-vector-png-image_10703113.png",
+    "img": "/images/images.jpeg",
     "title": "https://albertkemp.github.io/chinese-new-year",
     "url": "https://albertkemp.github.io/chinese-new-year"
   },
