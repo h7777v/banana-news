@@ -21,7 +21,7 @@
                     setInterval(function(){
                         if(GetRes(1)==undefined||doneS===null){}else{
                             doneS=null
-                            serverLatency = performance.now() - timeServer
+                            serverLatency = Math.round(performance.now() - timeServer)
                             document.getElementById("statusS").innerHTML="Online"
                             document.getElementById("LatencyS").innerHTML=`${serverLatency}ms`
                             document.getElementById("LagS").innerHTML=(serverLatency <= 20) ? "None" : (serverLatency <= 50) ? "Low" : (serverLatency <= 100) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
@@ -32,7 +32,7 @@
                         }
                         if(GetRes(2)==undefined||doneA===null){}else{
                             doneA=null
-                            adapterLatency = performance.now() - timeAdapter
+                            adapterLatency = Math.round(performance.now() - timeAdapter)
                             document.getElementById("statusA").innerHTML="Online"
                             document.getElementById("LatencyA").innerHTML=`${adapterLatency}ms`
                             document.getElementById("LagA").innerHTML=(adapterLatency <= 20) ? "None" : (adapterLatency <= 50) ? "Low" : (adapterLatency <= 100) ? "Moderate" : (adapterLatency <= 1000) ? "Heavy" : "Extreme"
