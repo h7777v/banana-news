@@ -65,8 +65,7 @@ function convert() {
         }
         // Empty lines are skipped
     }
-    html = html.replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
-    html = html.replace(/\n/gi, "<br>");
+    
 
     const selectElement = document.getElementById("mySelect");
     const value = selectElement.value;
@@ -75,6 +74,8 @@ function convert() {
     } else if (value=="option2") {
       html = `<div class="science-div">${html}</div>`;
     }
+    html = html.replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
+    html = html.replace(/\n/gi, "<br>");
     console.log(value);
     
     outputDiv.innerHTML = html;
