@@ -70,9 +70,9 @@ function convert() {
 
     const selectElement = document.getElementById("mySelect");
     const value = selectElement.value;
-    if (value==="option1") {
+    if (value=="option1") {
       html = `<div class="newsdiv">${html}</div>`;
-    } else if (value==="option2") {
+    } else if (value=="option2") {
       html = `<div class="science-div">${html}</div>`;
     }
     console.log(value);
