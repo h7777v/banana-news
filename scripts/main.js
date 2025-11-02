@@ -48,6 +48,10 @@ https://banana-news.github.io/banana/share_this_page
       window.open(newTabDiv.getAttribute('title'), '_blank');
     });
   }
+  const viewportWidth = window.innerWidth;
+  if (viewportWidth<768) {
+    document.getElementById('bg').textContent="bn.";
+  }
  
 
 
