@@ -18,7 +18,7 @@
                     buildReq(0, [], "server", 1, 0)
                     const timeAdapter = performance.now()
                     buildReq(0, [], "adapter", 2, 0)
-                    setInterval(function(){
+                    setInterval(()=>{
                         if(GetRes(1)==undefined||doneS===null){}else{
                             doneS=null
                             serverLatency = Math.round(performance.now() - timeServer)
