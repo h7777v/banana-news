@@ -345,6 +345,8 @@ text-align:center;
 }
 #searchButton{
   float:right;
+  width:auto;
+  box-shadow:none;
 }
 .rightNerd{
   margin-right:27.33!important;

@@ -36,8 +36,11 @@ height: 30px;
 width: 350px;
 cursor: text;
 border-color: #181818 rgb(54, 54, 54) rgb(59, 59, 59) rgb(0, 0, 0);
+box-shadow:none;
+width:auto;
 }
-.searchinput:focus{outline:none;}
+.searchinput:focus{outline:none;scale:none;}
+.searchinput::after{width:auto;}
 #searchResults {
     background-color: rgb(208, 208, 208);
     padding: 20px;
@@ -65,7 +68,10 @@ border-color: #181818 rgb(54, 54, 54) rgb(59, 59, 59) rgb(0, 0, 0);
     width: 200px;
     font-size: 30px;
     height: 70px;
+    width:auto;
+    box-shadow:none;
   }
+  .searchbutton::after{width:auto;}
   .searchbutton:hover {
     background-color: #808080;
     color: #000000;
