@@ -133,7 +133,7 @@ button:hover {
 button:hover{
   background-color:rgb(230, 230, 230);color:#000000;
 }
-.button {
+button {
   position: relative;
   background-color: #44aa04;
   border: none;
@@ -149,7 +149,7 @@ button:hover{
   border-radius: 50%;
 }
 
-.button:after {
+button:after {
   content: "";
   background: #f1f1f1;
   display: block;
@@ -162,7 +162,7 @@ button:hover{
   transition: all 0.8s
 }
 
-.button:active:after {
+button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;

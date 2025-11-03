@@ -49,7 +49,7 @@ https://banana-news.github.io/banana/share_this_page
             background-color: #ff0000;
         }
         .formstyle {
-            width: 300px;
+            width: 350px;
             height: 450px;
             margin: auto;
             border: 3px solid #000000;
@@ -58,10 +58,10 @@ https://banana-news.github.io/banana/share_this_page
             background-color:#242424;
         }
 .formstyle input {
-    background: rgba(255, 255, 255, 0.6);
+    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: #ffffff;
+    color: #000000;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding-top:10px;
@@ -73,8 +73,9 @@ https://banana-news.github.io/banana/share_this_page
     transition: all 0.25s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
-input[type=text]{font-size:28px;}
-input[type=button]:hover {
+.formstyle input[type=text]{font-size:28px;background: rgba(244, 244, 244, 0.6);}
+.formstyle input[type=button]:hover {
+  color:#ffffff;
     background: rgba(128, 128, 128, 0.4);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);

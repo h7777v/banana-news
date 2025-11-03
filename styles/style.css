@@ -185,6 +185,44 @@ a:hover{
     inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
+button:hover{
+  background-color:rgb(230, 230, 230);color:#000000;
+}
+button {
+  position: relative;
+  background-color: #44aa04;
+  border: none;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 
   h1{
     font-family: 'Google Sans Code', serif;
@@ -250,6 +288,29 @@ body {
     outline:none;
   } 
   */
+  input {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  /* Other input styles */
+  border: 1px solid #d1d1d1;
+  padding: 0.6em 1.45em 0.7em;
+  border-radius: 4px;
+}
+input:hover{
+scale:1.05;
+}
+input:focus{
+background-color:#f8ffcc;
+outline:none;
+}
+form input, form select, form button, form h2{margin-bottom:20px}
+
+form{
+padding:15px;
+border-radius:20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin:10px;
+padding:20px;
+}
 .topnav {
   position:fixed;
 background-color:#363434;
@@ -390,7 +451,7 @@ border-radius:2px}
   h1{font-size: 75px;}
   p{font-size:18px;}
   h2{font-size:25px;}
-
+  body{margin:0;padding:0;}
 }
 
 @media screen and (max-width: 600px) {
