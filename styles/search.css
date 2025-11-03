@@ -36,7 +36,7 @@ https://banana-news.github.io/banana/share_this_page
 border:none;
 
 }#searchbar:hover{
-  scale:auto;
+  scale:1;
 }
             .searchinput{
   padding: 20px;
@@ -47,6 +47,9 @@ cursor: text;
 border-color: #181818 rgb(54, 54, 54) rgb(59, 59, 59) rgb(0, 0, 0);
 box-shadow:none;
 width:auto;
+}
+#searchButton{
+  font-size:20px;
 }
 .searchinput:focus{outline:none;scale:none;}
 .searchinput::after{width:auto;}
