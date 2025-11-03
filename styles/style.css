@@ -309,10 +309,13 @@ border-radius:20px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 margin:10px;
 padding:20px;
+text-align:left;
 }
 #message{
   color:#44aa04;
   font-size:25px;
+  text-align:left;
+  margin-left:0;
 }
 .topnav {
   position:fixed;
