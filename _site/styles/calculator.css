@@ -49,7 +49,7 @@ https://banana-news.github.io/banana/share_this_page
             background-color: #ff0000;
         }
         .formstyle {
-            width: 300px;
+            width: 325px;
             height: 450px;
             margin: auto;
             border: 3px solid #000000;
@@ -67,7 +67,7 @@ https://banana-news.github.io/banana/share_this_page
             padding-bottom:10px;
             padding-left: 26px;
             padding-right: 26px;
-            margin: 5px;
+            margin: 2px;
             font-size: 20px;
             transition: 0.25s ease-in-out;
         }

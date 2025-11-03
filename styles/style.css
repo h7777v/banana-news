@@ -117,14 +117,19 @@ filter:brightness(65%);
   left: 50%;
   /* Other styling for the heading (font-size, font-weight, etc.) */
 }
-.background h1{
+#bg{
   font-size: 100px;
    font-family: 'Comfortaa', sans-serif; 
   top: 20%;
   
 }
+.background h1{
+  font-size:100px;
+  top:30%;
+}
 .background h2{
   top:70%;
+  font-size:30px;
 }
 .background p {
   top: 90%;
@@ -146,7 +151,7 @@ a{
 a:hover{
   text-decoration: underline;
 }
-button {
+#liquidglassbutton {
   font-size: 16px;
   font-weight: 500;
   border-radius: 9999px;
@@ -169,7 +174,7 @@ button {
   transition: all 0.25s ease;
 }
 
-button:hover {
+#liquidglassbutton:hover {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -182,8 +187,8 @@ button:hover {
 }
 
   h1{
-    font-family: 'IBM Plex Serif', serif;
-    font-size: 100px;
+    font-family: 'Google Sans Code', serif;
+    font-size: 40px;
     text-align: center;
     
   }
@@ -199,13 +204,13 @@ button:hover {
     width: 100%;
   }*/
   h2{
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
+    font-family: 'Google Sans Code', sans-serif;
+    font-size: 30px;
     text-align: center;
   }
   p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-family: 'Tiktok Sans', sans-serif;
+    font-size: 18px;
     text-align: center;
     color: black;
   }
@@ -391,7 +396,7 @@ border-radius:2px}
 @media screen and (max-width: 600px) {
   #searchButton{display:block}
   .topnav.responsive {position: relative;
-  height: 300px;}
+  height: 400px;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 30px;

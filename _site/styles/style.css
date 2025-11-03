@@ -111,24 +111,62 @@ a{
 }
 a:hover{
   text-decoration: underline;
-}
+}/*
 button {
-  font-size: 16px;                     /* Apple uses slightly smaller, refined text */
-  font-weight: 500;                    /* medium weight */
-  border-radius: 9999px;               /* pill shape */
-  padding: 10px 24px;                  /* balanced padding */
-  background-color: #236e1e;           /* rich brown tone */
-  color: #ffffff;                      /* fine white text */
+  font-size: 16px;                    
+  font-weight: 500;                    
+  border-radius: 9999px;               
+  padding: 10px 24px;                  
+  background-color: #236e1e;           
+  color: #ffffff;                      
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  border: none;                        /* no hard borders */
+  border: none;                        
   cursor: pointer;
   transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
 }
 
 button:hover {
-  background-color: #5a3e18;           /* darker brown on hover */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow */
-  transform: translateY(-1px);         /* slight lift */
+  background-color: #5a3e18;           
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  transform: translateY(-1px);         
+}*/
+button:hover{
+  background-color:rgb(230, 230, 230);color:#000000;
+}
+.button {
+  position: relative;
+  background-color: #44aa04;
+  border: none;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 
@@ -328,7 +366,7 @@ border-radius:2px}
   h1{font-size: 75px;}
   p{font-size:18px;}
   h2{font-size:25px;}
-
+body{margin:0;}
 }
 
 @media screen and (max-width: 600px) {
