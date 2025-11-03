@@ -29,6 +29,15 @@ https://banana-news.github.io/banana/share_this_page
 
 
 */
+#searchbar {
+  box-shadow:none;
+  padding:0;
+  width:auto;
+border:none;
+
+}#searchbar:hover{
+  scale:auto;
+}
             .searchinput{
   padding: 20px;
 border-radius: 20px;
