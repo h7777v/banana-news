@@ -59,8 +59,9 @@ https://banana-news.github.io/banana/share_this_page
       big = true;
     }
   },500);
-  
- 
+  function addTick() {
+  document.querySelector("#message").textContent=`✅${document.querySelector("#message").textContent}`;
+  }
 
 
  

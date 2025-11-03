@@ -6,7 +6,7 @@ withServer: "True"
 
 
 <form id="signupForm">
-  <h2>Signup</h2>
+  <h2 style="text-align:left;">Signup</h2>
   <div>
     <label for="username">username:</label>
     <input type="username" id="username" placeholder="username" required>
@@ -20,14 +20,16 @@ withServer: "True"
     <input type="password" id="password" placeholder="Enter your password" required>
   </div>
   <button type="submit">Create Account</button>
+  <div id="message"></div>
 </form>
 <!--
 <button id="google" type="button" style="color: black";>Signup with Google</button>-->
-<div id="message"></div>
+
 
 <p>Already have an account? <a href="/login/">Log In</a></p>
 
 <script>
+  message = document.getElementById("message");
   signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById("username").value;
@@ -37,15 +39,19 @@ withServer: "True"
     setInterval(()=>{
       if(GetRes(1)!=undefined){
         if(GetRes(1).content.status==200){
-          document.getElementById("message").innerHTML="Please check your email the link will expire in 10 minutes. <br>Can't find it... check your spam and junk folders. "
+          document.getElementById("message").innerHTML="Please check your email the link will expire in 10 minutes. <br><b>Can't find it... check your spam and junk folders. </b>"
         } else if(GetRes(1).content.status==422){
           document.getElementById("message").innerHTML="Username, email or password must be able to be encoded in ascii. "
+          message.style.color="red";
         } else if(GetRes(1).content.status==400){
           document.getElementById("message").innerHTML="Email already exists. "
+          message.style.color="red";
         } else if(GetRes(1).content.status==400.5){
           document.getElementById("message").innerHTML="Username already exists. "
+          message.style.color="red";
         } else {
           document.getElementById("message").innerHTML="Invalid server response. "
+          message.style.color="red";
         }
       }
     }, 5)

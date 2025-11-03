@@ -7,15 +7,16 @@ withServer: "True"
 
 
 <form id="loginForm">
-  <h2>Login</h2>
+  <h2 style="text-align:left;">Login</h2>
   <label for="username">Username:</label>
-  <input type="username" id="username" placeholder="username" required>
+  <input type="username" id="username" placeholder="username" required><br>
   <label for="password">Password:</label>
-  <input type="password" id="password" placeholder="Enter your password" required>
-  <button type="submit">Login</button>
+  <input type="password" id="password" placeholder="Enter your password" required><br>
+  <button type="submit">Login</button><br>
+  <p id="message"></p>
 </form>
 
-<p id="message"></p>
+
 
 <p>Don't have an account? <a href="/signup">Sign Up</a></p>
 <script>
@@ -27,7 +28,7 @@ withServer: "True"
     setInterval(function(){
       if(GetRes(1)!=undefined){
         if(GetRes(1)["content"]["status"]==200){
-          document.getElementById("message").innerHTML="Login sucess!"
+          document.getElementById("message").innerHTML="✅Login sucess!"
         }else if(GetRes(1)["content"]["status"]==403){
           document.getElementById("message").innerHTML="Invalid username or password"
         }else{
