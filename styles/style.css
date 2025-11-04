@@ -466,6 +466,9 @@ border-radius:2px}
 #sci-container{width:100%;}
 .background h1 {font-size:60px;}
 #bg{font-size:100px;}
+#sci-container iframe{
+  width:100%;
+}
 }
 .form h2{
   text-align:left;
