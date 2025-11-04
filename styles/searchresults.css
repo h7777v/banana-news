@@ -43,8 +43,9 @@ https://banana-news.github.io/banana/share_this_page
     overflow:hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
   @media(max-width:768px){
-    .searchresult{width:100%;border-bottom:2px solid grey;}
+    #searchResults{width:100%;}
   }
   .toilet-bowl{
       border:4px solid black;
