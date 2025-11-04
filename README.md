@@ -1,5 +1,5 @@
 # Banana
-## 1500 commits on main repository, 400 commits on new repository! 💯 🎉🥳
+## Drumroll, we're nearing 500 commits.............🥳🎉🥳🎉🥳🎉🥳🎉🍌🍌🍌🍌🍌🍌🍌
 ## The all-new Banana with eleventy SSG and nunjucks!
 News, tech, politics, games, geography, maths and science site
 <img src="/images/logosvg.svg" height="200px" alt="Our logo">
