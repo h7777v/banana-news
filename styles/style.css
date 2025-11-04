@@ -469,6 +469,7 @@ border-radius:2px}
 #sci-container iframe{
   width:100%;
 }
+#sci-container img{width:100%;}
 }
 .form h2{
   text-align:left;
