@@ -201,6 +201,7 @@ button {
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+  border-radius:5px;
 }
 
 button:after {

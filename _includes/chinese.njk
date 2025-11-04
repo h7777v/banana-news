@@ -70,7 +70,7 @@
         <link rel="stylesheet" href="/styles/searchresults.css">
         <link rel="stylesheet" href="/styles/news.css">
         <link rel="stylesheet" href="/styles/modal.css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
         <!---->
         <link rel="shortcut icon" href="/images/logosvg.svg"><link rel="icon" href="/images/logosvg.svg">
@@ -102,9 +102,9 @@
           </div></div>
           <a href="/login" id="loginLink">登录</a>
           <p>香蕉新闻刚刚更新了！欢迎使用我们的登录功能。如果你现在登录，你会看到“USER AUTHENTICATION SUCCESSFUL"的消息。不用担心，我们马上要加入很多新功能了。</p>
-     
+     <div id="container">
        {{ content | safe }}
-     
+     </div>
         <footer>&copy; 香蕉新闻 2025。</footer>
         <!--请不要删除这行代码：-->
         <script src="/scripts/main.js"></script>
