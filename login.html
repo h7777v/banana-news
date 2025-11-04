@@ -28,7 +28,7 @@ withServer: "True"
     setInterval(function(){
       if(GetRes(1)!=undefined){
         if(GetRes(1)["content"]["status"]==200){
-          document.getElementById("message").innerHTML="✅Login sucess!"
+          document.getElementById("message").innerHTML="✅Login success!"
         }else if(GetRes(1)["content"]["status"]==403){
           document.getElementById("message").innerHTML="Invalid username or password"
         }else{
