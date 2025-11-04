@@ -1,0 +1,12 @@
+<div style="width: 100%;background-color:#EBEAEA;">
+    <div style="margin: auto;width: 100%;max-width: 500px;border-radius: 25px;">
+        <br>
+        <h1 style="text-align: center;background-color:#FFFFFF;margin:0px;"><img src="https://banananews.netlify.app/images/TheLogo.png" alt="Banana News Logo" height="50" width="auto">Welcome to <span style="color:#ffec19;">Banana News!</span></h1>
+        <div style="background-color:#FFFFFF;">
+            <p style="margin:0px;font-size: 15px;padding: 20px;padding-bottom: 0px;">To finish signing up, please verify your email:</p><br>
+            <button style="padding:10px;background-color:#ffe135;border-radius:5px;border:none;width:125px;display:block;margin:0 auto;cursor:pointer;" onclick="window.location.href=`https://banananews.netlify.app/server/verify?code={base62_encode(code.encode('ascii'))}`">Verify your email</button>
+            <p style="margin:0px;font-size: 15px;padding: 20px;">If you did not sign up for Banana News, please ignore this email however you can still visit our website <a href="https://banananews.netlify.app/" style="color:#fad70f;">here</a>. </p>
+        </div>
+        <br>
+    </div>
+</div>
