@@ -45,7 +45,7 @@ https://banana-news.github.io/banana/share_this_page
         keyTerms[i].textContent="⚡"+keyTerms[i].textContent;
         }
     
-        var shown = false
+        var shown = false;
         var pd = document.getElementById("bgTable");
     function displayPd(button, state) {
         

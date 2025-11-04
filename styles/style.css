@@ -463,7 +463,9 @@ border-radius:2px}
   p{font-size:18px;}
   h2{font-size:25px;}
   body{margin:0;padding:0;}
-
+#sci-container{width:100%;}
+.background h1 {font-size:60px;}
+#bg{font-size:100px;}
 }
 .form h2{
   text-align:left;
