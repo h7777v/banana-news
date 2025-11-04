@@ -69,10 +69,8 @@ h2{width:100%;}
   
 
 .newsdiv button{
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: #000000;
+   
+    color: #ffffff;
     width: 350px;
     font-size: 17px;
     padding: 10px;
@@ -80,21 +78,14 @@ h2{width:100%;}
     margin: auto;
     float: left;
     height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    
     border-radius: 8px;
-    box-shadow: 
-        0 4px 6px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transition: all 0.25s ease;
+
+    background-color: #6868fd;
 }
 .newsdiv button:hover{
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 
-        0 6px 12px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: #6868fd;
+    
     cursor: pointer;
 }
 .newsdiv img {
