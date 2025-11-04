@@ -102,8 +102,6 @@ Promise.all(otherPages.map((page, i) =>
             description.innerHTML = resultDescriptions[i]; 
             result.appendChild(link);
             result.appendChild(description);
-            var hr = document.createElement("hr");
-            result.appendChild(hr);
             var searchResults = document.getElementById('searchResults');
             searchResults.appendChild(result);
         }
