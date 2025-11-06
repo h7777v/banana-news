@@ -20,15 +20,16 @@ withServer: "True"
 
 <p>Don't have an account? <a href="/signup">Sign Up</a></p>
 <script>
+  var done = false
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
     buildReq(4, [username, password], "server", 1, 0)
+    buildReq(5, [username], id=2)
     setInterval(function(){
       if(GetRes(1)!=undefined){
         if(GetRes(1)["content"]["status"]==200){
-          buildReq(5, [username], id=2)
           setInterval(()=>{
             if(GetRes(2).content.status==200){
               setCookie("username", username, 1)
