@@ -29,7 +29,7 @@
                             server = true
                             document.getElementById("statusS").innerHTML="Online"
                             document.getElementById("LatencyS").innerHTML=`${serverLatency}ms`
-                            document.getElementById("LagS").innerHTML=(serverLatency <= 20) ? "None" : (serverLatency <= 50) ? "Low" : (serverLatency <= 100) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
+                            document.getElementById("LagS").innerHTML=(serverLatency <= 40) ? "None" : (serverLatency <= 100) ? "Low" : (serverLatency <= 150) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
                             document.getElementById("LatencyTitleS").style.display="block"
                             document.getElementById("LatencyS").style.display="block"
                             document.getElementById("LagTitleS").style.display="block"
@@ -41,7 +41,7 @@
                             adapter = true
                             document.getElementById("statusA").innerHTML="Online"
                             document.getElementById("LatencyA").innerHTML=`${adapterLatency}ms`
-                            document.getElementById("LagA").innerHTML=(adapterLatency <= 20) ? "None" : (adapterLatency <= 50) ? "Low" : (adapterLatency <= 100) ? "Moderate" : (adapterLatency <= 1000) ? "Heavy" : "Extreme"
+                            document.getElementById("LagA").innerHTML=(adapterLatency <= 40) ? "None" : (adapterLatency <= 100) ? "Low" : (adapterLatency <= 150) ? "Moderate" : (adapterLatency <= 1000) ? "Heavy" : "Extreme"
                             document.getElementById("LatencyTitleA").style.display="block"
                             document.getElementById("LatencyA").style.display="block"
                             document.getElementById("LagTitleA").style.display="block"
