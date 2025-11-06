@@ -27,7 +27,7 @@ var w
 var l_
 
 var item = {
-  1:["Spike", "https://toppng.com/uploads/preview/spikes-11550721030sp47x0fyra.png"]
+  1:["Spike", "/images/spike.png"]
 }
 var level = {
   1:{
