@@ -5,6 +5,10 @@
         <title>Server status - Banana News dev</title>
         <link rel="icon" href="/images/logosvg.svg">
         <script src="adapter.js"></script>
+        <script>
+            var server = false
+            var adapter = false
+        </script>
         <script async>
             let done = false
             setInterval(()=>{
@@ -22,6 +26,7 @@
                         if(GetRes(1)==undefined||doneS===null){}else{
                             doneS=null
                             serverLatency = Math.round(performance.now() - timeServer)
+                            server = true
                             document.getElementById("statusS").innerHTML="Online"
                             document.getElementById("LatencyS").innerHTML=`${serverLatency}ms`
                             document.getElementById("LagS").innerHTML=(serverLatency <= 20) ? "None" : (serverLatency <= 50) ? "Low" : (serverLatency <= 100) ? "Moderate" : (serverLatency <= 1000) ? "Heavy" : "Extreme"
@@ -33,6 +38,7 @@
                         if(GetRes(2)==undefined||doneA===null){}else{
                             doneA=null
                             adapterLatency = Math.round(performance.now() - timeAdapter)
+                            adapter = true
                             document.getElementById("statusA").innerHTML="Online"
                             document.getElementById("LatencyA").innerHTML=`${adapterLatency}ms`
                             document.getElementById("LagA").innerHTML=(adapterLatency <= 20) ? "None" : (adapterLatency <= 50) ? "Low" : (adapterLatency <= 100) ? "Moderate" : (adapterLatency <= 1000) ? "Heavy" : "Extreme"
@@ -71,6 +77,17 @@
                 document.getElementById("LatencyA").style.display="none"
                 document.getElementById("LagTitleA").style.display="none"
                 document.getElementById("LagA").style.display="none"
+            </script>
+            <script async>
+                async()=>{
+                    await Promise((resolve) => setTimeout(resolve, 1000));
+                    if(server = false){
+                        document.getElementById("statusS").innerHTML="Offline"
+                    }
+                    if(adapter = false){
+                        document.getElementById("statusA").innerHTML="Offline"
+                    }
+                }
             </script>
         </div>
     </body>
