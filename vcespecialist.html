@@ -1,0 +1,137 @@
+---
+layout: "base.njk"
+title: "VCE Specialist Mathematics"
+---
+
+<h1 style="color: black; background: white;">VCE Specialist Mathematics</h1>
+
+<div class="newsdiv">
+    <div class="section-header">
+        <div class="section-icon">💰</div>
+        <h2>Complex Numbers</h2>
+    </div>
+    <p>We explore the arithmetic and geometric properties of complex numbers, representing them in both Cartesian and polar form, and applying De Moivre’s theorem to solve equations and model periodic behaviour.</p>
+
+    <div class="math-concept">
+        <h3>Modulus and Argument</h3>
+        <p>A complex number can be expressed as <strong>z = a + bi = r(cos θ + i sin θ)</strong>, where <strong>r = √(a² + b²)</strong> is the modulus and <strong>θ = tan⁻¹(b/a)</strong> is the argument.</p>
+    </div>
+
+    <div class="practice-box">
+        <h3>Practice Questions</h3>
+        <div class="practice-question">
+            <p>Find the modulus and argument of the complex number z = 3 + 4i.</p>
+            <p class="answer">r = √(3² + 4²) = 5, θ = tan⁻¹(4/3) ≈ 53.1°</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+        <div class="practice-question">
+            <p>Express z = 1 − i in polar form, and find z².</p>
+            <p class="answer">r = √2, θ = −45° → z = √2(cos(−45°) + i sin(−45°)), z² = 2cis(−90°) = −2i</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+    </div>
+</div>
+
+<div class="newsdiv">
+    <div class="section-header">
+        <div class="section-icon">📈</div>
+        <h2>Differential Calculus</h2>
+    </div>
+    <div class="math-concept">
+        <h3>Rates of Change and Tangents</h3>
+        <p>Differentiation allows us to find instantaneous rates of change and the gradient of curves. The derivative of y = f(x) at a point gives the gradient of the tangent line at that point.</p>
+    </div>
+
+    <div class="practice-box">
+        <h3>Practice Questions</h3>
+        <div class="practice-question">
+            <p>Find the derivative of y = 3x² − 4x + 1 and determine the gradient when x = 2.</p>
+            <p class="answer">dy/dx = 6x − 4 → at x = 2, dy/dx = 8</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+        <div class="practice-question">
+            <p>The curve y = x³ − 6x² + 9x has a stationary point at x = a. Find the coordinates of this point and determine its nature.</p>
+            <p class="answer">dy/dx = 3x² − 12x + 9 = 0 → x = 1 or 3; at x = 1, min (y = 4); at x = 3, max (y = 0)</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+    </div>
+</div>
+
+<div class="newsdiv">
+    <div class="section-header">
+        <div class="section-icon">📊</div>
+        <h2>Vectors and Kinematics</h2>
+    </div>
+    <p>We represent quantities that have both magnitude and direction using vectors, and apply them to problems in motion, forces, and geometry.</p>
+
+    <div class="math-concept">
+        <h3>Vector Operations</h3>
+        <p>For vectors <strong>a = (a₁, a₂)</strong> and <strong>b = (b₁, b₂)</strong>, the scalar product is <strong>a · b = a₁b₁ + a₂b₂</strong>, and the magnitude is <strong>|a| = √(a₁² + a₂²)</strong>.</p>
+    </div>
+
+    <div class="practice-box">
+        <h3>Practice Questions</h3>
+        <div class="practice-question">
+            <p>Find the angle between vectors a = (3, 4) and b = (5, 0).</p>
+            <p class="answer">a·b = 15, |a| = 5, |b| = 5 → cosθ = 15/(5×5) = 0.6 → θ = 53.1°</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+        <div class="practice-question">
+            <p>A particle moves so that its displacement is given by r(t) = (3t²)i + (2t)j. Find its velocity and acceleration at t = 2.</p>
+            <p class="answer">v(t) = dr/dt = (6t)i + 2j → v(2) = (12i + 2j); a(t) = d²r/dt² = (6i)</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+    </div>
+</div>
+
+<div class="newsdiv">
+    <div class="section-header">
+        <div class="section-icon">📐</div>
+        <h2>Integral Calculus</h2>
+    </div>
+    <div class="math-concept">
+        <h3>Area Under Curves</h3>
+        <p>Integration is the reverse of differentiation and is used to find accumulated quantities such as area under curves or total displacement from velocity functions.</p>
+    </div>
+
+    <div class="practice-box">
+        <h3>Practice Questions</h3>
+        <div class="practice-question">
+            <p>Find the area under y = x² between x = 0 and x = 3.</p>
+            <p class="answer">∫₀³ x² dx = [x³/3]₀³ = 9</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+        <div class="practice-question">
+            <p>The velocity of a particle is v(t) = 4t − 2. Find its displacement after 5 seconds if s(0) = 0.</p>
+            <p class="answer">s = ∫(4t − 2)dt = 2t² − 2t → s(5) = 2(25) − 10 = 40 m</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+    </div>
+</div>
+
+<div class="newsdiv">
+    <div class="section-header">
+        <div class="section-icon">🕸️</div>
+        <h2>Differential Equations and Modelling</h2>
+    </div>
+    <div class="math-concept">
+        <h3>Solving First-Order Differential Equations</h3>
+        <p>Differential equations describe systems where a rate of change depends on the current state. We solve separable equations and apply initial conditions to model real-world phenomena.</p>
+    </div>
+
+    <div class="practice-box">
+        <h3>Practice Questions</h3>
+        <div class="practice-question">
+            <p>Solve the differential equation dy/dx = 3x² given y = 2 when x = 1.</p>
+            <p class="answer">∫dy = ∫3x²dx → y = x³ + C → 2 = 1 + C → C = 1 → y = x³ + 1</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+        <div class="practice-question">
+            <p>A population grows at a rate proportional to its size, with dP/dt = 0.2P. Find P after 5 years if P₀ = 1000.</p>
+            <p class="answer">P = 1000e^(0.2×5) = 1000e¹ = 2718 (approx.)</p>
+            <button class="reveal-button" onclick="revealAnswer(this)">Reveal Answer</button>
+        </div>
+    </div>
+</div>
+
+<script src="/scripts/1stgrade.js"></script>
