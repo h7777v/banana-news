@@ -340,7 +340,9 @@ if (a_()) {
   // Add your main window-specific JavaScript code here
 }
 </script>
+{%if withTS == "True"%}
 <script src="/scripts/tsc/typescript.js"></script>
 <script src="/scripts/tsc/transpiler.js"></script>
+{%endif%}
         </body>
 </html>
