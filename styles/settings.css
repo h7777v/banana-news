@@ -41,8 +41,6 @@ body {
 }
 
 .button-cover:before {
-  counter-increment: button-counter;
-  content: counter(button-counter);
   position: absolute;
   right: 0;
   bottom: 0;
