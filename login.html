@@ -26,7 +26,7 @@ withServer: "True"
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
     buildReq(4, [username, password], "server", 1, 0)
-    buildReq(5, [username], id=2)
+    buildReq(5, [username], "server", 2)
     setInterval(function(){
       if(GetRes(1)!=undefined){
         if(GetRes(1)?.content?.status==200){
@@ -39,14 +39,14 @@ withServer: "True"
             }else{
               document.getElementById("message").innerHTML="Invalid server response"
             }
-          }, 500)
+          }, 5)
         }else if(GetRes(1)?.content?.status==403){
           document.getElementById("message").innerHTML="Invalid username or password"
         }else{
           document.getElementById("message").innerHTML="Invalid server response"
         }
       }
-    }, 5000)
+    }, 5)
   })
 </script>
 <script type="module">/*
