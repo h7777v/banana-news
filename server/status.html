@@ -79,14 +79,12 @@
                 document.getElementById("LagA").style.display="none"
             </script>
             <script async>
-                async()=>{
-                    await Promise((resolve) => setTimeout(resolve, 1000));
-                    if(server = false){
-                        document.getElementById("statusS").innerHTML="Offline"
-                    }
-                    if(adapter = false){
-                        document.getElementById("statusA").innerHTML="Offline"
-                    }
+                Promise((resolve) => setTimeout(resolve, 1000));
+                if(server = false){
+                    document.getElementById("statusS").innerHTML="Offline"
+                }
+                if(adapter = false){
+                    document.getElementById("statusA").innerHTML="Offline"
                 }
             </script>
         </div>
