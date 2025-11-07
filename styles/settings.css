@@ -17,7 +17,6 @@ body {
   display: table;
   width: 600px;
   margin: 80px auto;
-  counter-reset: button-counter;
 }
 
 .row {
@@ -102,7 +101,7 @@ body {
 
 /* Button 3 */
 #button-3 .knobs:before {
-  content: "YES";
+  content: "ON";
   position: absolute;
   top: 4px;
   left: 4px;
@@ -129,7 +128,7 @@ body {
 }
 
 #button-3 .checkbox:checked + .knobs:before {
-  content: "NO";
+  content: "OFF";
   left: 42px;
   background-color: #f44336;
 }
