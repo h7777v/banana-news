@@ -29,9 +29,9 @@ withServer: "True"
     buildReq(5, [username], id=2)
     setInterval(function(){
       if(GetRes(1)!=undefined){
-        if(GetRes(1)["content"]["status"]==200){
+        if(GetRes(1)?.content?.status==200){
           setInterval(()=>{
-            if(GetRes(2)["content"]["status"]==200){
+            if(GetRes(2)?.content?.status==200){
               setCookie("username", username, 1)
               setCookie("email", GetRes(2).content.res.email, 1)
               setCookie("password", password, 1)
@@ -40,7 +40,7 @@ withServer: "True"
               document.getElementById("message").innerHTML="Invalid server response"
             }
           }, 500)
-        }else if(GetRes(1)["content"]["status"]==403){
+        }else if(GetRes(1)?.content?.status==403){
           document.getElementById("message").innerHTML="Invalid username or password"
         }else{
           document.getElementById("message").innerHTML="Invalid server response"
