@@ -137,68 +137,69 @@ body {
   background-color: #fcebeb;
 }
 
-/* 3-way toggle */
-#button-3way {
-  width: 110px;
-  height: 36px;
-  position: relative;
-  margin: 0 auto;
-  border-radius: 50px;
-  overflow: hidden;
+.tw-toggle {
+  /* background: #95A5A6; */
+  display: inline-block;
+  padding: 2px 3px;
+  border-radius: 20px;
+  position:relative;
+  border: 2px solid #95A5A6;
 }
 
-#button-3way .layer {
-  background-color: #e3f2fd;
-  border-radius: inherit;
-  transition: background 0.3s ease;
-}
-
-#button-3way .knobs {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  background-color: #03a9f4;
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
+.tw-toggle label {
   text-align: center;
-  line-height: 28px;
-  transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15),
-              background-color 0.3s;
-  z-index: 2;
-  pointer-events: none;
+  font-family: sans-serif;
+  display: inline-block;
+  color: #95A5A6;
+  position:relative;
+  z-index:2;
+  margin: 0;
+  text-align: center;
+  padding: 2px 3px;
+  font-size: 15px;
+  /* cursor: pointer; */
 }
 
-#button-3way .range {
+.tw-toggle input {
+  /* display: none; */
   position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
   z-index: 3;
+  opacity: 0;
   cursor: pointer;
 }
 
-/* Position of knob for states 0/1/2 */
-#button-3way[data-state="0"] .knobs {
-  transform: translateX(0);
-  background-color: #4caf50; /* green */
+.tw-toggle span {
+  height: 21px;
+  width: 21px;
+  line-height: 21px;
+  border-radius: 50%;
+  background:#fff;
+  display:block;
+  position:absolute;
+  left: 22px;
+  top: 2px;
+  transition:all 0.3s ease-in-out;
 }
 
-#button-3way[data-state="1"] .knobs {
-  transform: translateX(36px);
-  background-color: #ffc107; /* amber */
+.tw-toggle input[value="false"]:checked ~ span{
+  background:#e74c3c;
+  left:2px;
+  color:#fff;
 }
 
-#button-3way[data-state="2"] .knobs {
-  transform: translateX(72px);
-  background-color: #f44336; /* red */
+.tw-toggle input[value="true"]:checked ~ span{
+  background:#27ae60;
+  left: 46px;
+}
+.tw-toggle input[value="-1"]:checked ~ span{
+  background:#95A5A6;
+  left: 23px;
 }
 
-/* Label inside knob */
-#button-3way[data-state="0"] .knobs::before { content: "LOW"; }
-#button-3way[data-state="1"] .knobs::before { content: "MED"; }
-#button-3way[data-state="2"] .knobs::before { content: "HI"; }
+.tw-toggle input[value="false"]:checked + label,.tw-toggle input[value="true"]:checked + label{
+  color:#fff;
+}
+.tw-toggle input[value="-1"]:checked + label{
+  color:#fff;
+}
 
