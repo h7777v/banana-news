@@ -2,6 +2,7 @@
 layout: "base.njk"
 title: "Settings"
 css: "/styles/settings.css"
+TailScript: "/scripts/settings.js"
 ---
 
 <div class="toggle-button-cover">
@@ -12,4 +13,13 @@ css: "/styles/settings.css"
         <div class="layer"></div>
     </div>
     </div>
+</div>
+<div class="toggle-button-cover">
+  <div class="button-cover">
+    <div class="button r" id="button-3way">
+      <input type="range" min="0" max="2" value="0" step="1" class="range" id="triRange" />
+      <div class="knobs"></div>
+      <div class="layer"></div>
+    </div>
+  </div>
 </div>
