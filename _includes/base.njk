@@ -215,12 +215,13 @@ function a_() {
           <a href="/login" id="loginLink" class="rightNerds">Log in</a>
           <a href="/signup" class="rightNerds">Sign up</a>
             
-              <button onclick="showSearch()" id="searchButton" class="stripped"><i class="fa fa-search" aria-hidden="true"></i>
+              <button onclick="showSearch()" id="searchButton" class="stripped"><i class="fa fa-search" aria-hidden="true"></i><p style="font-size: 0px">Search</p>
               </button>
             
             
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars stripped"></i>
+              <p style="font-size: 0px">menu</p>
             </a>
           </div>
           <div id="div-to-show">
@@ -339,7 +340,9 @@ if (a_()) {
   // Add your main window-specific JavaScript code here
 }
 </script>
+{%if withTS == "True"%}
 <script src="/scripts/tsc/typescript.js"></script>
 <script src="/scripts/tsc/transpiler.js"></script>
+{%endif%}
         </body>
 </html>
