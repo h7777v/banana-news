@@ -111,6 +111,33 @@
           }
         });
       }, 10000)
+      document.querySelectorAll("img").forEach(img => {
+          try {
+            const url = new URL(img.src, location.origin);
+            if (url.hostname !== location.hostname) {
+              url.protocol = "https:";
+              img.src = "about:blank";
+            }
+          } catch (e) {
+            console.warn("Invalid image src:", img.src);
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("*").forEach(el => {
+          const style = window.getComputedStyle(el);
+          const bg = style.backgroundImage;
+          if (bg && bg.startsWith("url(")) {
+            const match = bg.match(/url\(["']?(.*?)["']?\)/);
+            if (match) {
+              const url = new URL(match[1], location.origin);
+              if (url.hostname !== location.hostname) {
+                url.protocol = "https:";
+                el.style.backgroundImage = `url("about:blank")`;
+              }
+            }
+          }
+        });
     })
     </script>
     <script>
