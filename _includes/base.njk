@@ -68,6 +68,7 @@
     <script src="/server/adapter.js"></script>
     {% endif %}
     <script src='https://www.noupe.com/embed/019a15b01e447d89848e864a3ef4e3fab0f6.js'></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self';">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,6 +131,7 @@
         <link rel="stylesheet" href="/styles/1stgrade.css">
         <link rel="stylesheet" href="/styles/science.css">
         <link rel="stylesheet" href="{{css}}">
+        <script src="{{HeaderScript}}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <!---->
 
@@ -285,6 +287,7 @@ function a_() {
         <script src="/scripts/中文3.js"></script>
         <script src="/scripts/中文search.js"></script>
         <script src="/scripts/1stgrade.js"></script>-->
+        <script src="{{TailScript}}">
         <script>
 if (a_()) {
   if (window.location !== window.parent.location) {const a=['q', 'a', 'z', 'w', 's', 'x', 'e', 'd', 'c', 'r', 'f', 'v', 't', 'g', 'b', 'y', 'h', 'n', 'u', 'j', 'm', 'i', 'k', 'o', 'l', 'p', 'Q', 'A', 'W', 'S', 'E', 'D', 'R', 'F', 'T', 'G', 'Y', 'H', 'U', 'J', 'I', 'K', 'O', 'L', 'Z', 'C', 'X', 'V', 'B', 'M', 'N', 'P', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ' ', ',', '.', '/', ';', "'", '[', ']', '\\', '`', '~', '<', '>', '?', ':', '"', '{', '}', '|', '-', '=', '_', '+', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '÷', '…', '¯', 'ツ'];const b=[16, 21, 62, 17, 1, 17, 1, 14, 1, 85];let c = '';for(i in b){c+=a[b[i]];};document.body.innerHTML=`<h1>${c}</h1>`;}else{console.log("s");}
