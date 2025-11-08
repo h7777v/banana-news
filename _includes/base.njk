@@ -81,6 +81,8 @@
         }
     </script>-->
     <script>
+    blockingOn = false;
+    if (blockingOn){
     document.addEventListener("DOMContentLoaded", () => {
       setInterval(()=>{
         document.querySelectorAll("img").forEach(img => {
@@ -139,6 +141,7 @@
           }
         });
     })
+    }
     </script>
     <script>
     function a_() {
