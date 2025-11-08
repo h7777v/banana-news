@@ -6,13 +6,6 @@
     "title": "",
     "url": ""
   },
-  "BananaJump2": {
-    "header": "Banana Jump 2",
-    "text": "Jump over spikes with the new banana jump",
-    "img": "/images/bananajump2.jpeg",
-    "title": "/bananajump2",
-    "url": "/bananajump2"
-  },
   "Ocean": {
     "header": "Ocean",
     "text": "Navigate through rocks, coral, fish and jellies, each with a different chance of killing you!",
