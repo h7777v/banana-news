@@ -107,7 +107,7 @@
   "CoinFlip": {
     "header": "Coin flip",
     "text": "A coin flipping tool.",
-    "img": "https://www.coincuriosity.com/media/1545859193/1983-australia-5-cents-reverse.png",
+    "img": "/images/1983-australia-5-cents-reverse.png",
     "title": "https://albertkemp.github.io/coinflip",
     "url": "https://albertkemp.github.io/coinflip"
   },
