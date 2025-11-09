@@ -39,6 +39,8 @@ https://banana-news.github.io/banana/share_this_page
         random = getRandom(2);
             scienceDivs[i].innerHTML += "<p>🔥Good job! On to the next topic!🔥</p>";
     }
+    scienceDivs[scienceDivs.length-1].innerHTML += '<p>Competition science links:</p> <ul>     <li><a href="https://www.asi.edu.au/program/junior-science-olympiad/junior-science-olympiad-past-exams/">Junior Science Olympiad</a></li>     <li><a href="https://www.asi.edu.au/program/australian-science-olympiads/past-exams-with-answers/">Australian Science Olympiads</a></li> </ul>';
+    
     scienceDivs[scienceDivs.length-1].innerHTML += "<img src='/images/pixil-gif-drawing(2).gif' height='400' style='margin:auto;'><p>Gifts come to people who try. Thanks for learning with Banana!</p>";
     scienceDivs[0].innerHTML = "<h2><b class='kt'>⚡This is a key term. You should put it in your flashcards!</b></h2>" + scienceDivs[0].innerHTML;
     for (i = 0;i<keyTerms.length-1;i++) {
