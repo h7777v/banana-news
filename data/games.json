@@ -6,12 +6,19 @@
     "title": "",
     "url": ""
   },
+  "CoinAdventure": {
+    "header": "Coin Adventure",
+    "text": "Collect all the coins and dodge fire to win!",
+    "img": "/images/coin.png",
+    "title": "/coinadventure",
+    "url": "/coinadventure"
+  },
   "Ocean": {
     "header": "Ocean",
     "text": "Navigate through rocks, coral, fish and jellies, each with a different chance of killing you!",
     "img": "/images/ocean.png",
-    "title": "https://albertkemp.github.io/scorespace_game",
-    "url": "https://albertkemp.github.io/scorespace_game"
+    "title": "/ocean",
+    "url": "/ocean"
   },
   "Blockjump": {
     "header": "Block Jump",
