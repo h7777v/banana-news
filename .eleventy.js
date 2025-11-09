@@ -6,4 +6,5 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("data");
   eleventyConfig.addPassthroughCopy("server");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("local_frame");
 };
