@@ -2,22 +2,28 @@
 layout: "base.njk"
 title: "Settings"
 css: "/styles/settings.css"
+withTS: "True"
 ---
 
-<div class="toggle-button-cover">
-    <div class="button-cover">
-    <div class="button r" id="button-3">
-        <input type="checkbox" class="checkbox" />
-        <div class="knobs"></div>
-        <div class="layer"></div>
+<div class="white">
+    <p>Most efficient - balanced - High performance</p>
+    <div class="tw-toggle">
+        <input type="radio" name="toggle" value="false">
+        <label class="toggle toggle-yes">O
+        <input checked type="radio" name="toggle" value="-1">
+        <label class="toggle toggle-yes">O
+        <input type="radio" name="toggle" value="true">
+        <label class="toggle toggle-yes">O
     </div>
+    <div class="toggle-button-cover">
+        <div class="button-cover">
+        <div class="button r" id="button-3">
+            <input type="checkbox" class="checkbox" />
+            <div class="knobs"></div>
+            <div class="layer"></div>
+        </div>
+        </div>
     </div>
+    <button id="apply">Apply</button>
 </div>
-<div class="tw-toggle">
-  <input type="radio" name="toggle" value="false">
-  <label class="toggle toggle-yes">O
-  <input checked type="radio" name="toggle" value="-1">
-  <label class="toggle toggle-yes">O
-  <input type="radio" name="toggle" value="true">
-  <label class="toggle toggle-yes">O
-</div>
+<script src="/scripts/settings.ts" type="text/typescript"></script>
