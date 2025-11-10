@@ -65,3 +65,4 @@ https://banana-news.github.io/banana/share_this_page
         }
     }
     
+    scienceDivs[scienceDivs.length-1].innerHTML+=c;
