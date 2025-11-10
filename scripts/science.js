@@ -46,11 +46,11 @@ https://banana-news.github.io/banana/share_this_page
     for (i = 0;i<keyTerms.length-1;i++) {
         keyTerms[i].textContent="⚡"+keyTerms[i].textContent;
         }
-    
+    scienceDivs[scienceDivs.length-1].innerHTML=!(scienceDivs[scienceDivs.length-1].innerHTML.includes(c)) ? scienceDivs[scienceDivs.length-1].innerHTML+=c : scienceDivs[scienceDivs.length-1].innerHTML+="";
         var shown = false;
         var pd = document.getElementById("bgTable");
     function displayPd(button, state) {
-        
+            
         if (shown == false) {
        
         pd.style.display="block";
@@ -64,5 +64,7 @@ https://banana-news.github.io/banana/share_this_page
             displayPd(button);
         }
     }
+    if (!(scienceDivs[scienceDivs.length-1].innerHTML.includes(c))) {
+        scienceDivs[scienceDivs.length-1].innerHTML+=c;
+    }
     
-    scienceDivs[scienceDivs.length-1].innerHTML+=c;
