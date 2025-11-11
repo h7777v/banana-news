@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://banananews.netlify.app/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/games/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/maths/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/science/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/tech/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/geography/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/news/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/politics/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/login/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/signup/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/learnmoreaboutmathspage/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/learnmoreabouttechpage/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/learnmoreaboutnewspage/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/cpuforgamingpctierlist/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/bannews/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://banananews.netlify.app/bananam/</loc>
+  <lastmod>2025-11-11T07:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
