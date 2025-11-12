@@ -84,7 +84,7 @@
     </script>-->
     <script>
       (()=>{
-        var __x__ = false;
+        let __x__ = false;
         const cookies = document.cookie.split('; ');
         for (const cookie of cookies) {
           const [key, value] = cookie.split('=');
@@ -93,7 +93,10 @@
           }
         }
         if(__x__ === false){
-          
+          const date = new Date();
+          date.setTime(date.getTime() + 2592000000);
+          const expires = "expires=" + date.toUTCString();
+          document.cookie = `rndmode=2; ${expires}; path=/;`;
         }
       })();
     </script>
