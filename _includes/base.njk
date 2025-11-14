@@ -82,7 +82,7 @@
             window.location.href='https://banananews.netlify.app'
         }
     </script>-->
-    <script type="text/jsx">
+    <script>
       (()=>{
         let __x__ = false;
         let mode;
@@ -111,13 +111,11 @@
             break;
           case "2":
             //high performance
-            html = (
-              <>
+            html = `
                 <link rel="preload" href="/images/a.svg" as="image"/>
                 <link rel="preload" href="/images/a2.svg" as="image"/>
                 <link rel="preload" href="/images/360_F_536235793_wlduO29kZpQNvC0P4qaoe3oRzAalZ0LI.jpg" as="image"/>
-              </>
-            );
+            `
             document.head.appendChild(html);
             break;
         }
