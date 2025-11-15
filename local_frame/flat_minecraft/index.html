@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flat Mincraft</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="display.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mongodb-browser"></script>
+    <script src="DETERMINATION/sutupHTML.js"></script>
+    <script src="functions.js"></script>
+    <script src="display.js"></script>
+    <script src="MinecodeCompiler/MinecodeCompiler.js"></script>
+    <script src="transitioner.js"></script>
+  </head>
+  <body>
+    <div id="pre-content">
+      <h1 id="title"><b>Flat Minecraft</b></h1>
+      <div>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div id="btn-con">
+        <button class="btn-m" onclick="document.getElementById('worldSector').style.display='block';document.getElementById('pre-content').style.display='none';">Play</button><br>
+        <button class="btn-m" onclick="document.getElementById('setting').style.display='block';document.getElementById('pre-content').style.display='none';">Settings</button><br>
+        <button class="btn-m" onclick="">Marketplace</button><br>
+        <button class="btn-m" onclick="">Dressing Room</button><br>
+        <button class="btn-m" onclick="">Achievements</button><br>
+        <button class="btn-m" onclick="">Feedback</button><br>
+      </div>
+      <div id="mobileDisplay">
+        <div>
+          <p class="noSpace" id="MobileDisplay">Mobile display: </p>
+        </div>
+        <div>
+          <p class="noSpace" id="MobileControll">Mobile controll: </p>
+        </div>
+        <p class="noSpace">Can be ajusted at the settings</p>
+      </div>
+    </div>
+    <div id="worldSector">
+      <div id="selector">
+        <div id="btn-holder">
+          <button id="worlds-btn">Worlds</button>
+          <button id="friends-btn">Friends</button>
+          <button id="server-btn">Servers</button>
+          <button id="close" onclick="document.getElementById('pre-content').style.display='block';document.getElementById('worldSector').style.display='none';">X</button>
+        </div>
+      </div>
+      <div id="content">
+        <div id="newBtn-Hold-top">
+          <div class="dark-grey" height="25%">
+            <br>
+          </div>
+          <div id="newBtn-Hold" class="dark-grey">
+            <button id="newWorld" onclick="document.getElementById('CreateWorld').style.display='block';document.getElementById('worldSector').style.display='none';">Create New</button>
+          </div>
+          <div class="dark-grey" height="25%">
+            <br>
+          </div>
+        </div>
+      </div>
+      <div id="worldShow"></div>
+    </div>
+    <div id="setting">
+      <button id="closeSet" onclick="document.getElementById('pre-content').style.display='block';document.getElementById('setting').style.display='none';">X</button>
+      <div>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div>
+        <div>Controlers:</div>
+        <div><p>Not avalable</p></div>
+      </div>
+    </div>
+    <div id="CreateWorld">
+      <div id="CreateWorldTab">
+        <button id="back" onclick="document.getElementById('worldSector').style.display='block';document.getElementById('CreateWorld').style.display='none';">←</button>
+      </div>
+      <div id="CreateWorldDisplay">
+        <div style="text-align: center">
+          <img src="defImg/defImg1.png" alt="Cannot load check internet. Please try again. " id="defImg" />
+        </div>
+        <div>
+          <p class="World-Tpe" id="worldType">Infinate</p>
+        </div>
+        <div id="CreateWorld-btn-con"><button id="CreateWorld-btn" onclick="createNewWorld('flat(completely)');document.getElementById('game').style.display='block';document.getElementById('CreateWorld').style.display='none';">Create</button></div>
+        <!--<div class="dropdown">
+          <button onclick="toggleList()" class="dropbtn">World Type</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a onclick="document.getElementById('worldType').innerHTML='Infinate';WorldType='infinate';">Infinate</a>
+            <a onclick="document.getElementById('worldType').innerHTML='Flat';WorldType='flat';">Flat</a>
+            <a onclick="document.getElementById('worldType').innerHTML='Flat (completely)';WorldType='flat(completely)';">Flat (completely)</a>
+          </div>
+        </div>-->
+      </div>
+      <div id="CreateWorldLeft">
+      </div>
+      <div id="CreateWorldRight"></div>
+    </div>
+    <div id="game">
+      <div id="chat">
+        <div id="messages"></div>
+        <form name="publish" id="ChatMsg">
+          <input type="text" name="message" id="ChatMsgTxt">
+          <input type="submit" value="Send" id="ChatMsgSub">
+        </form>
+      </div>
+      <div id="gameContentButton">
+        <button id="chat-btn" onclick="ChatControll()">🗨</button>
+        <button id="pauseGame-btn">| |</button>
+        <button id="emotes-btn">🤺</button>
+      </div>
+      <div id="gameContent"></div>
+    </div>
+    <script src="generation.js"></script>
+    <script src="script.js"></script>
+    <script src="Msg.js"></script>
+    <script src="GameGenerater.js"></script>
+    <script src="gameTick.js"></script>
+    <script>
+    function toggleList() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    <script>
+      console.log(Chunks)
+    </script>
+  </body>
+</html>
