@@ -322,11 +322,36 @@ function a_() {
           
           <!--<a href="/contributors">Contributors</a>-->
           
-          <a href="/login" id="loginLink" class="rightNerds">Log in</a>
-          <a href="/signup" class="rightNerds">Sign up</a>
+          <a href="/login" id="loginLink" class="rightNerds out">Log in</a>
+          <a href="/signup" class="rightNerds out">Sign up</a>
+
+          <a href="/" class="rightNerds in">Log out</a>
             
-              <button onclick="showSearch()" id="searchButton" class="stripped"><i class="fa fa-search" aria-hidden="true"></i><p style="font-size: 0px">Search</p>
-              </button>
+          <script>
+            (()=>{
+              function getCookie(name) {
+                const cookies = document.cookie.split('; ');
+                for (const cookie of cookies) {
+                  const [key, value] = cookie.split('=');
+                  if (key === name) {
+                    return decodeURIComponent(value);
+                  }
+                }
+                return null;
+              }
+              if(getCookie("username") == '' || getCookie("email") == '' || getCookie("password") == ''){
+                for(i of document.getElementsByClassName("in")){
+                  i.style.display = "none"
+                }
+              } else {
+                for(i of document.getElementsByClassName("out")){
+                  i.style.display = "none"
+                }
+              }
+            })()
+          </script>
+          <button onclick="showSearch()" id="searchButton" class="stripped"><i class="fa fa-search" aria-hidden="true"></i><p style="font-size: 0px">Search</p>
+          </button>
             
             
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
