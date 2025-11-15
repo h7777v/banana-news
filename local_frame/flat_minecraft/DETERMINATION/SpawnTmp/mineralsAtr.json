@@ -1,0 +1,17 @@
+{
+  "1" : {
+    "name" : "Coal",
+  },
+  "2" : {
+    "name" : "Iron",
+  },
+  "3" : {
+    "name" : "Gold",
+  },
+  "4" : {
+    "name" : "Copper",
+  }, 
+  "5" : {
+    "name" : "Diamond",
+  }
+}
