@@ -339,7 +339,7 @@ function a_() {
                 }
                 return null;
               }
-              if(getCookie("username") == '' || getCookie("email") == '' || getCookie("password") == ''){
+              if(getCookie("username") == null || getCookie("email") == null || getCookie("password") == null){
                 for(i of document.getElementsByClassName("in")){
                   i.style.display = "none"
                 }
