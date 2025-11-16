@@ -2,21 +2,16 @@ var state = 0;
 // 0 = pre-content
 
 var pages = [
-    document.getElementById('worldSector'),
     document.getElementById('pre-content'),
+    document.getElementById('worldSector'),
     document.getElementById('setting'),
     document.getElementById('CreateWorld')
 ]
 
-function closePage(){
+function updatePage(setState){
+    state = setState;
     for (let i = 0;i < pages.length;i++){
-        pages[i].style.display = 'none'
-    }
-}
-
-function updatePage(){
-    switch (state){
-        case 0:
-            break;
-    }
+        pages[i].style.display = 'none';
+    };
+    pages[state].style.display = 'block';
 }

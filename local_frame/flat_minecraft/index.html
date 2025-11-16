@@ -16,8 +16,8 @@
         <br>
       </div>
       <div id="btn-con">
-        <button class="btn-m mcText center" onclick="document.getElementById('worldSector').style.display='block';document.getElementById('pre-content').style.display='none';">Play</button><br>
-        <button class="btn-m mcText center" onclick="document.getElementById('setting').style.display='block';document.getElementById('pre-content').style.display='none';">Settings</button><br>
+        <button class="btn-m mcText center" onclick="updatePage(1)">Play</button><br>
+        <button class="btn-m mcText center" onclick="updatePage(2)">Settings</button><br>
         <!--<button class="btn-m mcText center" onclick="">Marketplace</button><br>-->
         <button class="btn-m mcText center" onclick="">Dressing Room</button><br>
         <button class="btn-m mcText center" onclick="">Achievements</button><br>
@@ -94,7 +94,7 @@
       </div>
       <div id="CreateWorldRight"></div>
     </div>
-    <div id="game">
+    <!--<div id="game">
       <div id="chat">
         <div id="messages"></div>
         <form name="publish" id="ChatMsg">
@@ -108,7 +108,7 @@
         <button id="emotes-btn">🤺</button>
       </div>
       <div id="gameContent"></div>
-    </div>
+    </div>-->
     <script>
     function toggleList() {
       document.getElementById("myDropdown").classList.toggle("show");
