@@ -25,6 +25,7 @@ body{
   margin-bottom: 5px;
   background-color: #b3b3b3;
   width: 20%;
+  min-width: 125px;
   height: 7%;
 }
 
@@ -37,7 +38,7 @@ body{
 }
 
 .btn-s{
-    text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   box-sizing: inherit;
@@ -60,8 +61,4 @@ body{
   border: 1px solid #ccc!important;
   color: #000!important;
   background-color: #f1f1f1!important;
-}
-
-.btn-con{
-    text-align: center;
 }
