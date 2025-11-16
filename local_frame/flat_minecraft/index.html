@@ -23,23 +23,14 @@
         <button class="btn-m mcText center" onclick="">Achievements</button><br>
         <button class="btn-m mcText center" onclick="">Feedback</button><br>
       </div>
-      <div id="mobileDisplay">
-        <div>
-          <p class="noSpace" id="MobileDisplay">Mobile display: </p>
-        </div>
-        <div>
-          <p class="noSpace" id="MobileControll">Mobile controll: </p>
-        </div>
-        <p class="noSpace">Can be ajusted at the settings</p>
-      </div>
     </div>
     <div id="worldSector">
       <div id="selector">
         <div id="btn-holder">
-          <button id="worlds-btn">Worlds</button>
-          <button id="friends-btn">Friends</button>
-          <button id="server-btn">Servers</button>
-          <button id="close" onclick="document.getElementById('pre-content').style.display='block';document.getElementById('worldSector').style.display='none';">X</button>
+          <button id="worlds-btn" class="btn-s">Worlds</button>
+          <button id="friends-btn"class="btn-s">Friends</button>
+          <button id="server-btn"class="btn-s">Servers</button>
+          <button id="close" class="btn-s" onclick="updatePage(0)">X</button>
         </div>
       </div>
       <div id="content">

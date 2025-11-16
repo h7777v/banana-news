@@ -15,3 +15,9 @@ function updatePage(setState){
     };
     pages[state].style.display = 'block';
 }
+
+const init = () => {
+    updatePage(0);
+}
+
+document.addEventListener("DOMContentLoaded", init);
