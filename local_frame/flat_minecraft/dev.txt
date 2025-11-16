@@ -1,4 +1,0 @@
-display(2, "block", null, 2, 0, 0, 1,  20, 10, "grass")
-display(2, "block", null, 2, 0, 0, 1,  20, 10, "grass")
-display(null, "player", null, 2, 0, 0, 1,  20, 10, "player")
-display(null, "player", null, 2, 0, 0, 1,  20, 10, "player")
