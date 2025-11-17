@@ -21,7 +21,7 @@ function setWorldtype(setType){
         case 0:
             document.getElementById("worldType").innerHTML="Normal";
             break;
-        case 2:
+        case 1:
             document.getElementById("worldType").innerHTML="Flat";
             break;
         default:
