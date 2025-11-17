@@ -19,22 +19,25 @@ body{
     text-align: center;
 }
 
-.btn-m{
+.btn{
   border: outset;
   padding-bottom: 5px;
   margin-bottom: 5px;
   background-color: #b3b3b3;
-  width: 20%;
-  min-width: 125px;
-  height: 7%;
 }
 
-.btn-m:hover{
+.btn:hover{
   background-color: #a6a6a6
 }
 
-.btn-m:active{
+.btn:active{
   border: inset;
+}
+
+.btn-m{
+  width: 20%;
+  min-width: 125px;
+  height: 7%;
 }
 
 .btn-s{
@@ -61,4 +64,14 @@ body{
   border: 1px solid #ccc!important;
   color: #000!important;
   background-color: #f1f1f1!important;
+}
+
+.btn-nw{
+  width: 15%;
+  height: 100%;
+}
+
+.btn-cw{
+  width: 40%;
+  height: 100%;
 }
