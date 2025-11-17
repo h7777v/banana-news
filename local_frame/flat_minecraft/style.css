@@ -115,11 +115,3 @@ body{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.dropdown:hover{
-  background-color: #a6a6a6
-}
-
-.dropbtn {
-  background-color: #b3b3b3;
-}
