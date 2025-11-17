@@ -16,6 +16,19 @@ function updatePage(setState){
     pages[state].style.display = 'block';
 }
 
+function setWorldtype(setType){
+    switch (setType){
+        case 0:
+            document.getElementById("worldType").innerHTML="Normal";
+            break;
+        case 2:
+            document.getElementById("worldType").innerHTML="Normal";
+            break;
+        default:
+            break;
+    }
+}
+
 const init = () => {
     updatePage(0);
 }

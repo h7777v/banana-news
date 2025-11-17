@@ -66,17 +66,16 @@
       </div>
       <div id="CreateWorldDisplay">
         <div>
-          <p class="World-Tpe" id="worldType">Normal</p>
+          <p class="mcText center" id="worldType">Normal</p>
         </div>
-        <div id="CreateWorld-btn-con"><button class="btn btn-cw" onclick="">Create</button></div>
         <div class="dropdown">
-        <button class="dropbtn">Dropdown Menu</button>
+        <button class="dropbtn">World type</button>
         <div class="dropdown-content">
-          <div class="sel">Link 1</div>
-          <div class="sel">Link 2</div>
-          <div class="sel">Link 3</div>
+          <div class="sel" onclick="setWorldtype(0)">Normal</div>
+          <div class="sel" onclick="setWorldtype(1)">Flat</div>
         </div>
       </div>
+      <div id="CreateWorld-btn-con"><button class="btn btn-cw" onclick="">Create</button></div>
       </div>
       <div id="CreateWorldLeft">
       </div>
