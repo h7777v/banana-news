@@ -4,3 +4,8 @@ directory = "netlify/functions"
   for = "index.html"
   [headers.values]
     Cache-Control = "public, max-age=60, must-revalidate"
+    
+[build]
+  command = "npm run build"
+  publish = "dist"
+
