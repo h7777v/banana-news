@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import cheerio from "cheerio";
 
 export async function handler(event, context) {
