@@ -8,13 +8,13 @@ export async function handler(event, context) {
     const html = await response.text();
     const content = cheerio.load(html);
     const blockjumphtml = cheerio.load( await (await blockjump).text());
-    blockjumphtml(script).attr("src", "/scripts/blockjumpTAS.js");
+    blockjumphtml("script").attr("src", "/scripts/blockjumpTAS.js");
     content("#header").html("Welcome to the TAS page. ");
     content("#main").html(blockjumphtml);
     return {
       statusCode: 200,
       headers: { "Content-Type": "text/html" },
-      body: html
+      body: content.html()
     };
   } catch (error) {
     return {
