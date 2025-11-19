@@ -1,5 +1,5 @@
 [functions]
-directory = "/scripts/functions"
+directory = "scripts/functions"
 [[headers]]
   for = "index.html"
   [headers.values]
