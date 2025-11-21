@@ -8,4 +8,4 @@ directory = "netlify/functions"
 [build]
   base = "local_frame/flat_minecraft"
   command = "vite build"
-  publish = "local_frame/flat_minecraft/dist"
+  publish = "dist"
