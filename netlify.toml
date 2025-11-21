@@ -8,7 +8,7 @@ directory = "netlify/functions"
   [headers.values]
     Cache-Control = "public, max-age=60, must-revalidate"
     
-[build]
-  base = "."
+base = "."
   command = "cd local_frame/flat_minecraft && npm ci && npm run build"
-  publish = "public"
+  publish = "local_frame/flat_minecraft/dist"
+  functions = "local_frame/flat_minecraft/netlify/functions"
