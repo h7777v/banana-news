@@ -9,6 +9,7 @@ directory = "netlify/functions"
     Cache-Control = "public, max-age=60, must-revalidate"
     
 [build]
-  base = "local_frame/flat_minecraft"
-  command = "vite build"
-  publish = "dist"
+  base = "."
+  command = "cd local_frame/flat_minecraft && vite build"
+  publish = "local_frame/flat_minecraft/dist"
+  functions = "local_frame/flat_minecraft/netlify/functions"
