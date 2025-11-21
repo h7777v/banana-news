@@ -10,6 +10,6 @@ directory = "netlify/functions"
     
 [build]
   base = "."
-  command = "cd local_frame/flat_minecraft && vite build"
+  command = "cd local_frame/flat_minecraft && npm ci && npm run build"
   publish = "local_frame/flat_minecraft/dist"
   functions = "local_frame/flat_minecraft/netlify/functions"
