@@ -6,6 +6,6 @@ directory = "netlify/functions"
     Cache-Control = "public, max-age=60, must-revalidate"
     
 [build]
-  base = "/local_frame/flat_minecraft/game.html"
-  command = "vite build local_frame/flat_minecraft"
+  base = "/local_frame/flat_minecraft"
+  command = "vite build /local_frame/flat_minecraft"
   publish = "dist"
