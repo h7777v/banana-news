@@ -7,5 +7,5 @@ directory = "netlify/functions"
     
 [build]
   base = "local_frame/flat_minecraft"
-  command = "vite build --config local_frame/flat_minecraft"
-  publish = "dist"
+  command = "vite build"
+  publish = "local_frame/flat_minecraft/dist"
