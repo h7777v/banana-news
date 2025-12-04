@@ -11,4 +11,4 @@ directory = "netlify/functions"
 [build]
   base = "local_frame/flat_minecraft"
   command = "npm run build"
-  publish = "dist"
+  publish = "local_frame/flat_minecraft/dist"
