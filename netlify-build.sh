@@ -1,5 +1,3 @@
-set -e
-
 cd local_frame/flat_minecraft
 echo "Installing dependencies for flat_minecraft..."
 npm ci
