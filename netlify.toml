@@ -5,3 +5,5 @@ directory = "scripts/functions"
   [headers.values]
     Cache-Control = "public, max-age=60, must-revalidate"
     
+[build]
+  command = "cd local_frame/flat_minecraft/1.0-Alpha/game;vite build"
