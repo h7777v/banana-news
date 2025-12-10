@@ -7,4 +7,4 @@ directory = "scripts/functions"
     
 [build]
   command = "cd local_frame/flat_minecraft/1.0-Alpha/game;npm ci;npm run build"
-  publish = "cd local_frame/flat_minecraft/1.0-Alpha/game/dist"
+  publish = "cd local_frame/flat_minecraft/1.0-Alpha/game"
